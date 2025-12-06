@@ -382,6 +382,20 @@
             margin: 0;
             pointer-events: none;
         }
+
+                /* Lightbox Styles */
+        .lightbox { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); }
+        .lightbox.active { display: flex; align-items: center; justify-content: center; }
+        .lightbox-content { position: relative; max-width: 90%; max-height: 90%; }
+        .lightbox-image { max-width: 100%; max-height: 90vh; object-fit: contain; border-radius: 8px; box-shadow: 0 0 50px rgba(255,255,255,0.2); }
+        .lightbox-close { position: absolute; top: 20px; right: 30px; font-size: 40px; color: white; cursor: pointer; z-index: 10000; background: rgba(0,0,0,0.5); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s; }
+        .lightbox-close:hover { background: rgba(255,255,255,0.2); transform: rotate(90deg); }
+        .lightbox-prev, .lightbox-next { position: absolute; top: 50%; transform: translateY(-50%); font-size: 30px; color: white; cursor: pointer; padding: 15px 20px; background: rgba(0,0,0,0.5); border-radius: 50%; transition: all 0.3s; z-index: 10000; }
+        .lightbox-prev { left: 30px; }
+        .lightbox-next { right: 30px; }
+        .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.2); transform: translateY(-50%) scale(1.1); }
+        .lightbox-title { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: white; background: rgba(0,0,0,0.7); padding: 15px 30px; border-radius: 25px; font-size: 18px; z-index: 10000; }
+        .lightbox-counter { position: absolute; top: 20px; left: 30px; color: white; background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 20px; z-index: 10000; }
         .filter-btn.active {
             background-color: var(--orange);
             color: white;
@@ -3934,5 +3948,97 @@
 </script>
 </body>
 </html>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+        <div class="lightbox-content">
+            <span class="lightbox-prev" id="lightboxPrev">&#10094;</span>
+            <img src="" alt="" id="lightboxImage" class="lightbox-image">
+            <span class="lightbox-next" id="lightboxNext">&#10095;</span>
+        </div>
+        <div class="lightbox-title" id="lightboxTitle"></div>
+    </div>
+
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxTitle = document.getElementById('lightboxTitle');
+        const lightboxCounter = document.getElementById('lightboxCounter');
+        let currentImageIndex = 0;
+        let galleryImages = [];
+        
+        function collectGalleryImages() {
+            const visibleItems = document.querySelectorAll('.gallery-item:not([style*="display: none"])');
+            galleryImages = Array.from(visibleItems).map(item => ({
+                src: item.getAttribute('data-img') || item.querySelector('img').src,
+                title: item.getAttribute('data-title') || item.querySelector('figcaption p').textContent,
+                alt: item.querySelector('img').alt
+            }));
+        }
+        
+        function openLightbox(index) {
+            collectGalleryImages();
+            currentImageIndex = index;
+            const img = galleryImages[currentImageIndex];
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightboxTitle.textContent = img.title;
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function showPrevImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            const img = galleryImages[currentImageIndex];
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightboxTitle.textContent = img.title;
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+        }
+        
+        function showNextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            const img = galleryImages[currentImageIndex];
+            lightboxImage.src = img.src;
+            lightboxImage.alt = img.alt;
+            lightboxTitle.textContent = img.title;
+            lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
+        }
+        
+        document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+        document.getElementById('lightboxPrev').addEventListener('click', showPrevImage);
+        document.getElementById('lightboxNext').addEventListener('click', showNextImage);
+        
+        lightbox.addEventListener('click', function(e) {
+            if (e.target === lightbox) closeLightbox();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowLeft') showPrevImage();
+            if (e.key === 'ArrowRight') showNextImage();
+        });
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.gallery-item').forEach((item, index) => {
+                item.style.cursor = 'pointer';
+                item.addEventListener('click', function() {
+                    const visibleItems = document.querySelectorAll('.gallery-item:not([style*="display: none"])');
+                    const visibleIndex = Array.from(visibleItems).indexOf(item);
+                    openLightbox(visibleIndex);
+                });
+            });
+        });
+    </script>
+
 
 
