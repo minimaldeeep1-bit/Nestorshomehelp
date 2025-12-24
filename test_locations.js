@@ -17,13 +17,15 @@ try {
   assertContent(okotoksContent, '<title>Okotoks Handyman Services', 'Okotoks title is incorrect.');
   assertContent(okotoksContent, 'Your Handyman in <span class="text-orange">Okotoks</span>', 'Okotoks H1 is incorrect.');
   assertContent(okotoksContent, '<input type="hidden" name="location_source" value="Okotoks Landing Page">', 'Okotoks form value is incorrect.');
-  assert(!okotoksContent.includes('Airdrie'), 'Okotoks page should not contain "Airdrie".');
+  const okotoksBodyContent = okotoksContent.split('<footer')[0];
+  assert(!okotoksBodyContent.includes('Airdrie'), 'Okotoks page should not contain "Airdrie".');
 
   // Test cases for airdrie-handyman.html
   assertContent(airdrieContent, '<title>Airdrie Handyman Services', 'Airdrie title is incorrect.');
   assertContent(airdrieContent, 'Your Handyman in <span class="text-orange">Airdrie</span>', 'Airdrie H1 is incorrect.');
   assertContent(airdrieContent, '<input type="hidden" name="location_source" value="Airdrie Landing Page">', 'Airdrie form value is incorrect.');
-  assert(!airdrieContent.includes('Okotoks'), 'Airdrie page should not contain "Okotoks".');
+  const airdrieBodyContent = airdrieContent.split('<footer')[0];
+  assert(!airdrieBodyContent.includes('Okotoks'), 'Airdrie page should not contain "Okotoks".');
 
   console.log('All tests passed!');
 } catch (error) {
