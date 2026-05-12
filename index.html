@@ -12,7 +12,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    
+
     <!-- Favicon -->
      <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-96x96.png">
@@ -20,7 +20,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="assets/site.webmanifest">
     <meta name="theme-color" content="#1E3A5F">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <link rel="canonical" href="https://nestorshomehelp.ca/" />
@@ -41,7 +41,7 @@
 
     <meta property="og:title" content="Nestor's Home Help - Professional Handyman Calgary | (403) 461-4332">
     <meta property="og:description" content="Licensed handyman Nestor's Home Help offers professional home repairs, plunbing, electrical, furniture assembly & installations in Calgary area. Same-day service available. Call (403) 461-4332">
-    <meta property="og:image" content="https://nestorshomehelp.ca/assets/logo 1.png">    
+    <meta property="og:image" content="https://nestorshomehelp.ca/assets/logo 1.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Nestor's Home Help - Professional Handyman Calgary">
@@ -54,13 +54,13 @@
     <meta property="business:contact_data:postal_code" content="">
     <meta property="business:contact_data:country_name" content="Canada">
     <meta property="business:contact_data:phone_number" content="+14034614332">
-    
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Vitalii Nestorenko - Professional Handyman Calgary">
     <meta name="twitter:description" content="Licensed handyman offering home repairs, furniture assembly & installations in Calgary. Call (403) 461-4332">
     <meta name="twitter:image" content="https://nestorshomehelp.ca/assets/logo 1.png">
     <meta name="twitter:image:alt" content="Nestor's Home Help - Professional Handyman Calgary">
-    
+
     <!-- Local Business Schema -->
     <script type="application/ld+json">
 {
@@ -88,7 +88,7 @@
       "name": "Calgary, AB"
     },
     {
-      "@type": "City", 
+      "@type": "City",
       "name": "Airdrie, AB"
     },
     {
@@ -102,7 +102,7 @@
   ],
   "serviceType": [
     "Home Repair",
-    "Furniture Assembly", 
+    "Furniture Assembly",
     "TV Mounting",
     "Handyman Services",
     "Plumbing",
@@ -139,10 +139,10 @@
       }
     }
     </script>
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
+
     <!-- FAQ Structured Data -->
     <script type="application/ld+json">
     {
@@ -158,7 +158,7 @@
           }
         },
         {
-          "@type": "Question", 
+          "@type": "Question",
           "name": "How much do handyman services cost in Calgary?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -195,7 +195,7 @@
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
         }
-        
+
         /* Оптимізовані правила для мобільних */
         @media (max-width: 768px) {
             body {
@@ -203,44 +203,44 @@
                 line-height: 1.5;
                 -webkit-overflow-scrolling: touch;
             }
-            
+
             /* Покращена швидкість тач-взаємодії */
             * {
                 -webkit-tap-highlight-color: transparent;
                 -webkit-touch-callout: none;
             }
-            
+
             /* Швидший скролінг */
             .hero-card .card-content {
                 -webkit-overflow-scrolling: touch;
                 scroll-behavior: smooth;
                 touch-action: pan-y !important; /* ✅ Дозволяємо прокручування в контенті */
             }
-            
+
             /* Зменшення навантаження на GPU */
             .services-grid .hero-card {
                 will-change: transform, opacity;
                 touch-action: pan-y !important; /* ✅ Дозволяємо прокручування на картках */
             }
-            
+
             .services-grid .hero-card.expanded {
                 will-change: auto;
                 touch-action: pan-y !important; /* ✅ Дозволяємо прокручування на розкритих картках */
             }
-            
+
             /* ✅ Додаткове забезпечення прокручування */
             .services-grid {
                 touch-action: pan-y !important;
                 overflow: visible;
             }
-            
+
             /* ✅ Глобальне забезпечення прокручування */
             html, body {
                 touch-action: pan-y !important;
                 overflow-x: hidden;
                 overflow-y: auto !important;
             }
-            
+
             /* ✅ Дозволяємо прокручування на всіх контейнерах */
             .container, .mx-auto, .px-4, .px-6 {
                 touch-action: pan-y !important;
@@ -252,7 +252,7 @@
             --light-gray: #F5F5F5;
             --dark-gray: #64748b;
         }
-        
+
         /* Hero Slider Styles */
         #hero-slider {
             position: relative;
@@ -315,7 +315,7 @@
              opacity: 1;
              transform: translateY(0);
         }
-        
+
         /* Service Card Animation */
         .service-card {
             background-color: #ffffff;
@@ -348,7 +348,7 @@
         .service-card:hover .service-icon {
             transform: scale(1.1);
         }
-        
+
         /* Scroll animations */
         .reveal {
             opacity: 0;
@@ -359,7 +359,7 @@
             opacity: 1;
             transform: translateY(0);
         }
-        
+
         /* Filterable Gallery */
         .gallery-item {
             transition: transform 0.3s ease, opacity 0.3s ease;
@@ -398,7 +398,7 @@
             background-color: var(--orange);
             color: white;
         }
-        
+
         .dropdown:hover .dropdown-menu {
             opacity: 1;
             visibility: visible;
@@ -417,36 +417,36 @@
         .bg-orange { background-color: var(--orange) !important; }
 
         /* Typography Styles */
-        .hero-title { 
-            font-family: 'Roboto', sans-serif; 
+        .hero-title {
+            font-family: 'Roboto', sans-serif;
             font-weight: 900;
             letter-spacing: -0.02em;
         }
-        .section-title { 
-            font-family: 'Roboto', sans-serif; 
+        .section-title {
+            font-family: 'Roboto', sans-serif;
             font-weight: 900;
             letter-spacing: -0.02em;
             text-transform: none;
         }
-        .card-title { 
-            font-family: 'Roboto', sans-serif; 
+        .card-title {
+            font-family: 'Roboto', sans-serif;
             font-weight: 500;
         }
-        .btn-text, button { 
-            font-family: 'Roboto', sans-serif; 
+        .btn-text, button {
+            font-family: 'Roboto', sans-serif;
             font-weight: 500;
         }
-        .body-text, p { 
-            font-family: 'Roboto', sans-serif; 
+        .body-text, p {
+            font-family: 'Roboto', sans-serif;
             font-weight: 400;
             line-height: 1.6;
         }
-        .quote-text { 
-            font-family: 'Roboto', sans-serif; 
+        .quote-text {
+            font-family: 'Roboto', sans-serif;
             font-style: italic;
             font-weight: 500;
         }
-        
+
         .services-grid {
             width: 100%;
             overflow: visible;
@@ -463,16 +463,16 @@
             cursor: default; /* Змінюємо курсор, щоб не виглядав як кнопка */
         }
         @media (min-width: 480px) { .hero-card { height: 170px; } }
-        @media (min-width: 768px) { 
-            .hero-card { 
-                height: 200px; 
-                min-width: 90px; 
+        @media (min-width: 768px) {
+            .hero-card {
+                height: 200px;
+                min-width: 90px;
                 flex: 1;
                 width: auto;
-            } 
+            }
         }
         @media (min-width: 1024px) { .hero-card { height: 280px; min-width: 110px; } }
-        
+
         @media (min-width: 768px) {
             /* Прибираємо анімацію при наведенні на десктопі */
         }
@@ -489,7 +489,7 @@
             .services-grid .hero-card:active,
             .services-grid .hero-card.touch-active {
                 transform: translateY(-2px) scale(1.015);
-                box-shadow: 
+                box-shadow:
                     0 10px 30px rgba(30, 58, 138, 0.15),
                     0 5px 15px rgba(255, 107, 53, 0.1);
                 z-index: 5;
@@ -525,7 +525,7 @@
                 z-index: 1;
                 pointer-events: none;
             }
-            
+
             /* Підказка для користувача */
             .hero-card.expanded::after {
                 content: '👆 Tap to close';
@@ -545,28 +545,28 @@
                 box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
                 backdrop-filter: blur(10px);
             }
-            
+
             @keyframes fadeInOut {
                 0%, 100% { opacity: 0; transform: translateY(-8px) scale(0.9); }
                 15%, 85% { opacity: 1; transform: translateY(0) scale(1); }
             }
-            
+
             /* Додаткові стилі для тачскрін оптимізації */
             .hero-card.touch-active {
                 transform: translateY(-1px) scale(1.01) !important;
                 transition: all 0.15s ease-out !important;
             }
-            
+
         }
 
             /* Анімації видалені для кращої продуктивності */
-        
+
         .hero-card::before {
             content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover;
             background-position: center; opacity: 0.3; transition: opacity 0.6s ease; z-index: 1;
         }
         .hero-card:hover::before { opacity: 0.6; }
-        
+
         @media (max-width: 767px) {
             .hero-card::before {
                 opacity: 0.2;
@@ -576,7 +576,7 @@
             }
         }
         /* Прибираємо ефект hover для hero-card */
-        
+
         .hero-card .card-content {
             display: none; /* Контент карток прихований для простоти */
         }
@@ -590,37 +590,37 @@
         }
         @media (min-width: 768px) { .hero-card .card-content { padding: 1.25rem; justify-content: center; } }
         @media (min-width: 1024px) { .hero-card .card-content { padding: 1.5rem; } }
-        
+
         @media (max-width: 767px) {
-            .hero-card .card-content .space-y-1 { 
-                max-height: none !important; 
-                overflow: visible !important; 
+            .hero-card .card-content .space-y-1 {
+                max-height: none !important;
+                overflow: visible !important;
                 height: auto !important;
             }
         }
-        @media (min-width: 768px) { 
-            .hero-card .card-content .space-y-1 { 
-                max-height: 140px; 
-                overflow-y: auto; 
-                scrollbar-width: thin; 
-                scrollbar-color: rgba(156, 163, 175, 0.5) transparent; 
-            } 
+        @media (min-width: 768px) {
+            .hero-card .card-content .space-y-1 {
+                max-height: 140px;
+                overflow-y: auto;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+            }
         }
-        @media (min-width: 1024px) { 
-            .hero-card .card-content .space-y-1 { 
-                max-height: 180px; 
-            } 
+        @media (min-width: 1024px) {
+            .hero-card .card-content .space-y-1 {
+                max-height: 180px;
+            }
         }
-        
+
         @media (min-width: 768px) {
             .hero-card .card-content .space-y-1::-webkit-scrollbar { width: 3px; }
             .hero-card .card-content .space-y-1::-webkit-scrollbar-track { background: transparent; }
             .hero-card .card-content .space-y-1::-webkit-scrollbar-thumb { background-color: rgba(156, 163, 175, 0.5); border-radius: 3px; }
         }
-        
+
         /* Прибираємо hover ефекти для card-content */
         .hero-card-header { transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); position: relative; z-index: 10; }
-        
+
         /* Service backgrounds using uploaded images */
         .service-bg-1::before { background-image: url('assets/Kac85Iz_-qpUtBVkwpTvv.png'); }
         .service-bg-2::before { background-image: url('assets/GKKk9aMG1Wmlz8WdVqu_4.png'); }
@@ -647,7 +647,7 @@
             .hero-card {
                 border-radius: 1rem;
             }
-            
+
             /* Компактні розміри для мобільних */
             .hero-card .card-content h4 {
                 font-size: 0.95rem !important;
@@ -668,7 +668,7 @@
                 line-height: 1.1 !important;
                 padding: 0.05rem 0 !important;
             }
-            
+
             /* Повністю видаляємо скролбари на мобільних */
             .hero-card .card-content::-webkit-scrollbar {
                 display: none !important;
@@ -688,27 +688,27 @@
                 -webkit-tap-highlight-color: transparent;
                 position: relative;
             }
-            
+
             /* Прибираємо підказку "Tap to explore" */
-            
+
             /* Прибираємо анімацію підказки */
-            
+
             /* Додаємо більш помітну анімацію "дихання" для привернення уваги */
             @keyframes breatheCard {
-                0%, 100% { 
+                0%, 100% {
                     transform: scale(1);
-                    box-shadow: 
+                    box-shadow:
                         0 4px 12px rgba(0, 0, 0, 0.1),
                         0 2px 4px rgba(255, 107, 53, 0.1);
                 }
-                50% { 
+                50% {
                     transform: scale(1.015);
-                    box-shadow: 
+                    box-shadow:
                         0 8px 20px rgba(0, 0, 0, 0.15),
                         0 4px 8px rgba(255, 107, 53, 0.2);
                 }
             }
-            
+
             /* Ховаємо підказку коли картка розкрита */
             .hero-card.expanded .hero-card-header::after {
                 opacity: 0;
@@ -1208,7 +1208,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            
+
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="md:hidden fixed inset-0 navy-bg backdrop-blur-2xl opacity-0 invisible transition-all duration-300" style="z-index: 200;">
                 <div class="mobile-menu-content p-6 pt-20 h-full overflow-y-auto relative">
@@ -1222,13 +1222,13 @@
                     <button onclick="closeMobileMenu()" class="absolute top-6 right-6 text-white text-2xl hover:text-orange transition-colors w-12 h-12 flex items-center justify-center bg-white/25 hover:bg-white/35 rounded-full shadow-lg" style="z-index: 202;">
                         <i class="fas fa-times"></i>
                     </button>
-                    
+
                     <!-- Mobile Logo -->
                     <div class="text-center mb-8">
                         <img src="assets/logo 11.png" alt="Nestor's Home Help" class="h-12 w-auto mx-auto mb-2">
                         <p class="text-white/80 text-sm">Professional Handyman in Calgary</p>
                     </div>
-                    
+
                     <nav class="mobile-menu relative z-10">
                         <ul class="space-y-2 mb-8">
                             <li><a href="#hero-slider" onclick="closeMobileMenu()" class="flex items-center space-x-3 py-3 px-4 rounded-xl hover:bg-white/30 hover:backdrop-blur-md transition-all duration-300 hover:shadow-lg border border-transparent hover:border-blue-300/40">
@@ -1256,21 +1256,21 @@
                                 <span>Submit Request</span>
                             </a></li>
                         </ul>
-                        
+
                         <!-- Mobile Contact Section -->
                         <div class="border-t border-white/20 pt-6 space-y-4 relative z-10">
                             <h3 class="text-white font-semibold text-lg mb-4">Contact Now</h3>
-                            
+
                             <a href="tel:+14034614332" class="bg-orange text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-600 transition-colors flex items-center justify-center space-x-2">
                                 <i class="fas fa-phone"></i>
                                 <span>Call/Text (403) 461-4332</span>
                             </a>
-                            
+
                             <a href="mailto:nestorshomehelp@gmail.com" class="border border-white/30 text-white py-3 px-4 rounded-lg hover:bg-white/10 transition-colors flex items-center justify-center space-x-2">
                                 <i class="fas fa-envelope"></i>
                                 <span>Send Email</span>
                             </a>
-                            
+
                             <!-- Social Links Mobile -->
                             <div class="flex justify-center space-x-4 pt-4">
                                 <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-orange hover:text-white transition-colors">
@@ -1293,7 +1293,7 @@
             <div class="slide" style="background-image: url('assets/hero-slide-2.png');"></div>
             <div class="slide" style="background-image: url('assets/GKKk9aMG1Wmlz8WdVqu_4.png');"></div>
             <div class="slide" style="background-image: url('assets/OJVyr1lA-zK4lO5NezKae.png');"></div>
-            
+
             <div id="hero-content-container" class="hero-content active px-4">
                 <div class="container mx-auto px-4 py-8 md:py-20">
                     <div class="text-center mb-8 md:mb-16">
@@ -1315,38 +1315,38 @@
                             <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" rel="noopener" class="btn-text border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all inline-block shadow-lg hover:scale-105 flex items-center justify-center">
                     <i class="fab fa-instagram mr-2"></i> Instagram
                 </a>
-                
+
                 <a href="https://www.facebook.com/61583910731270" target="_blank" rel="noopener" class="btn-text border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all inline-block shadow-lg hover:scale-105 flex items-center justify-center">
                     <i class="fab fa-facebook-f mr-2"></i> Facebook
                 </a>
                         </div>
                     </div>
-        
+
                     <div id="services" class="services-grid flex flex-col md:flex-row gap-4 md:gap-1 lg:gap-3 xl:gap-4 max-w-7xl mx-auto transition-all duration-600 px-4 md:px-0">
                         <div class="hero-card service-bg-1 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">0
                             <div class="hero-card-header text-center">
                                 <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Interior Repairs & Renovations</h3>
                             </div>
                         </div>
-        
+
                         <div class="hero-card service-bg-2 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
                             <div class="hero-card-header text-center">
                                 <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Mounting & Installation</h3>
                             </div>
                         </div>
-        
+
                         <div class="hero-card service-bg-3 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
                             <div class="hero-card-header text-center">
                                 <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Finishing & Decorating</h3>
                             </div>
                         </div>
-        
+
                         <div class="hero-card service-bg-4 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
                             <div class="hero-card-header text-center">
                                 <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Plumbing & Electrical</h3>
                             </div>
                         </div>
-        
+
                         <div class="hero-card service-bg-5 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
                             <div class="hero-card-header text-center">
                                 <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Outdoor Services</h3>
@@ -1358,7 +1358,7 @@
         </section>
 
 
-        
+
         <!-- Complete Home Services Section -->
         <section id="comprehensive-services" class="py-20 relative overflow-hidden" style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 25%, #4a5568 50%, #FF6B35 75%, #ff8a5b 100%);">
             <!-- Декоративні елементи фону -->
@@ -1369,12 +1369,12 @@
                 <div class="absolute bottom-32 left-20 w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange rounded-full floating-element shadow-lg" style="animation-delay: 4s;"></div>
                 <div class="absolute bottom-40 right-40 w-28 h-28 bg-gradient-to-br from-purple-500 to-navy rounded-full floating-element shadow-xl" style="animation-delay: 1s;"></div>
                 <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-green-400 to-orange rounded-full floating-element shadow-lg" style="animation-delay: 3s;"></div>
-                
+
                 <!-- Додаткові blur елементи -->
                 <div class="absolute top-20 right-1/3 w-40 h-40 bg-gradient-to-br from-pink-300/30 to-purple-500/30 rounded-full floating-element blur-sm" style="animation-delay: 1.5s;"></div>
                 <div class="absolute bottom-20 left-1/3 w-36 h-36 bg-gradient-to-br from-cyan-300/30 to-blue-500/30 rounded-full floating-element blur-sm" style="animation-delay: 3.5s;"></div>
             </div>
-            
+
             <!-- Хвилеподібний SVG патерн -->
             <div class="absolute inset-0 opacity-8">
                 <svg class="w-full h-full" viewBox="0 0 1000 1000" preserveAspectRatio="none">
@@ -1408,26 +1408,26 @@
 
                 <!-- Services Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    
+
                     <!-- Interior Repairs & Renovations Card -->
                     <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
                         <div class="relative h-64 overflow-hidden">
                             <!-- Background Image -->
                             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/service\ 1.png');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-home text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Interior Repairs & Renovations</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">Caring for your home in every detail with professional craftsmanship</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1455,7 +1455,7 @@
                                     <span class="text-gray-700 text-base font-medium leading-relaxed">Cabinet, drawer, and hardware repairs</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-blue-500 hover:bg-blue-600 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1470,19 +1470,19 @@
                             <!-- Background Image -->
                             <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/tv-mounting-hero.jpeg');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-tv text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Mounting & Installation</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">Everything in place — strong, level, and secure with professional precision</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1510,7 +1510,7 @@
                                     <span class="text-gray-700 text-base font-medium leading-relaxed">LED strip lighting setup</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-orange hover:bg-orange/90 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1525,19 +1525,19 @@
                             <!-- Background Image -->
                               <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/service\ 3.png');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-wrench text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Plumbing & Electrical</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">Safe, clean, and functional solutions for your home's essential systems</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1565,7 +1565,7 @@
                                     <span class="text-yellow-700 text-base font-semibold">⚠️ Existing connections only</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1580,19 +1580,19 @@
                             <!-- Background Image -->
                                           <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/service 4.png');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-paint-roller text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Finishing & Decorating</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">Refreshing your space with care, attention to detail, and artistic touch</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1620,7 +1620,7 @@
                                     <span class="text-gray-700 text-base font-medium leading-relaxed">Wallpaper installation and removal</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-green-500 hover:bg-green-600 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1635,19 +1635,19 @@
                             <!-- Background Image -->
                               <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/Service\ 5.png');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-seedling text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Outdoor Services</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">A tidy and cozy yard, year-round maintenance and seasonal care</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1675,7 +1675,7 @@
                                     <span class="text-gray-700 text-base font-medium leading-relaxed">Seasonal yard cleanup</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1690,19 +1690,19 @@
                             <!-- Background Image -->
                               <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/Service\ 6.png');"></div>
                             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20"></div>
-                            
+
                             <div class="absolute top-6 left-6">
                                 <div class="w-16 h-16 bg-white/15 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20">
                                     <i class="fas fa-broom text-white text-2xl drop-shadow-lg"></i>
                                 </div>
                             </div>
-                            
+
                             <div class="absolute bottom-6 left-6 right-6">
                                 <h3 class="text-2xl font-black text-white mb-3 leading-tight drop-shadow-xl">Demolition & Cleaning</h3>
                                 <p class="text-white/95 text-base font-medium leading-relaxed drop-shadow-lg">Clean, clear, and ready for what's next. Professional removal and cleaning services</p>
                             </div>
                         </div>
-                        
+
                         <div class="p-8">
                             <div class="space-y-4">
                                 <div class="flex items-start space-x-4">
@@ -1730,7 +1730,7 @@
                                     <span class="text-gray-700 text-base font-medium leading-relaxed">Debris disposal and hauling</span>
                                 </div>
                             </div>
-                            
+
                             <div class="mt-8 pt-6 border-t border-gray-100">
                                 <a href="#request" class="w-full bg-red-500 hover:bg-red-600 text-white py-4 px-6 rounded-xl text-base font-bold transition-colors shadow-lg hover:shadow-xl">
                                     Get Free Quote
@@ -1830,11 +1830,11 @@
                     <div class="flex justify-center">
                         <div class="relative">
                             <div class="relative z-10">
-                                <img src="assets/professional-handyman-center.png" 
-                                     alt="Licensed handyman Calgary - Vitalii Nestorenko professional handyman services TV mounting furniture assembly" 
+                                <img src="assets/professional-handyman-center.png"
+                                     alt="Licensed handyman Calgary - Vitalii Nestorenko professional handyman services TV mounting furniture assembly"
                                      class="w-full max-w-sm mx-auto object-cover rounded-2xl shadow-2xl">
                             </div>
-                            
+
                             <!-- Floating Elements -->
                             <div class="absolute -top-6 -right-6 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg floating-element">
                                 <i class="fas fa-tools text-orange text-xl"></i>
@@ -1906,7 +1906,7 @@
                 <div class="absolute bottom-40 right-40 w-24 h-24 border-2 border-white rotate-45"></div>
             </div>
         </section>
-        
+
         <section id="process" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
@@ -1974,7 +1974,7 @@
                     <p class="body-text text-lg text-white max-w-3xl mx-auto mb-8">
                         <span class="text-orange font-bold text-xl">⚠️ All prices are approximate and subject to change</span> - the final price can only be determined after <span class="text-white font-bold">consultation with handyman</span>.
                     </p>
-                    
+
                     <!-- Pricing Model -->
                     <div class="bg-orange-50 rounded-2xl p-6 max-w-4xl mx-auto mb-12">
                         <h3 class="text-xl font-bold text-gray-700 mb-4">Our Pricing Model</h3>
@@ -2023,7 +2023,7 @@
 
 <!-- ТАБЛИЦЯ ЦІН (спочатку схована) -->
 <div id="pricing-table" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-  
+
   <!-- 📱 Мобільна версія (картки) -->
   <div class="lg:hidden space-y-6 mobile-pricing-cards px-2 mb-8">
     <!-- Mounting & Assembly Section -->
@@ -2327,7 +2327,7 @@
       </p>
     </div>
   </div>
-  
+
   <!-- 🖥️ Десктопна версія -->
   <div class="hidden lg:block">
   <div class="overflow-x-auto rounded-2xl border border-gray-200">
@@ -2555,7 +2555,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                
+
                                 <div class="mt-6 p-4 bg-navy blue-50 rounded-lg">
                                     <p class="text-xs text-white mb-2">
                                         <strong>Important:</strong> <span class="text-red-400 font-bold">⚠️ All prices are approximate and subject to change</span>. The final price can only be determined after <span class="text-white font-bold">consultation with handyman</span>. Materials are excluded from listed prices.
@@ -2637,8 +2637,8 @@
                         <div class="relative floating-element" style="animation-delay: 1s;">
                             <div class="relative">
                                 <div class="relative overflow-hidden rounded-3xl shadow-2xl">
-                                    <img src="assets/my avatar.png" 
-                                         alt="Licensed handyman Calgary providing affordable All Handyman services" 
+                                    <img src="assets/my avatar.png"
+                                         alt="Licensed handyman Calgary providing affordable All Handyman services"
                                          class="w-full h-90 object-cover">
 
                                     <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent"></div>
@@ -2705,14 +2705,14 @@
                             <p class="text-gray-700 mb-1">Serving nearby areas: Airdrie, Okotoks, Cochrane</p>
                             <p class="text-gray-700">Fully mobile handyman services</p>
                         </div>
-                        
+
                         <!-- Business Hours -->
                         <div class="bg-gray-50 rounded-xl p-4 md:p-6 shadow-sm border border-gray-100">
                             <h3 class="text-lg md:text-xl font-semibold mb-3 md:mb-4 flex items-center justify-center md:justify-start">
                                 <i class="fas fa-clock text-orange mr-2 md:hidden"></i>
                                 <span class="text-gray-600">Business</span> <span class="text-orange ml-2">Hours</span>
                             </h3>
-                            
+
                             <!-- Mobile Compact Version -->
                             <div class="md:hidden">
                                 <div class="bg-white rounded-lg p-3 mb-3 shadow-sm">
@@ -2740,7 +2740,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <!-- Desktop Version -->
                             <div class="hidden md:block">
                                 <div class="space-y-3">
@@ -2769,7 +2769,7 @@
                         </div>
                     </div>
                     <div class="flex-1 w-full h-[300px] lg:h-[400px] rounded shadow-lg overflow-hidden">
-                        <iframe 
+                        <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.29776135346!2d-114.10663772569865!3d51.04473350905267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371700c0d264b33%3A0x5f1b5dcfc0f6e6c1!2sCalgary%2C%20AB%2C%20Canada!5e0!3m2!1sen!2sca!4v1721226000000!5m2!1sen!2sca"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
@@ -2782,7 +2782,7 @@
             <div class="max-w-4xl mx-auto text-center mb-8 md:mb-10">
                 <h2 class="text-2xl md:text-3xl font-black text-gray-700 mb-2" style="font-weight: 900; letter-spacing: -0.02em;">Submit a Request</h2>
                 <p class="text-gray-600 text-sm md:text-base">Tell us what you need — and we'll get back to you shortly.</p>
-                
+
                 <!-- Business Hours Info -->
                 <div class="bg-blue-50 rounded-lg p-3 md:p-4 mt-6 border-l-4 border-blue-400">
                     <!-- Mobile Version -->
@@ -2801,7 +2801,7 @@
                             ⚡ We typically respond within 2-4 hours during business hours
                         </p>
                     </div>
-                    
+
                     <!-- Desktop Version -->
                     <div class="hidden md:block">
                         <div class="flex items-center justify-center space-x-4 text-sm">
@@ -2830,7 +2830,7 @@
                         <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange transition-all bg-white text-gray-700">
                     </div>
                 </div>
-                
+
                 <div>
                     <label for="email" class="block mb-2 font-medium text-gray-700">Email <span class="text-red-500">*</span></label>
                     <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-orange transition-all bg-white text-gray-700">
@@ -2951,16 +2951,16 @@
                 <!-- Project Gallery -->
                                 <!-- Project Gallery -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-                    
+
                     <!-- Electrical Work (2 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"> data-category="electrical" data-img="assets/electrical light 1.jpg" data-title="Ceiling Light Installation"
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/electrical light 1.jpg" data-title="Ceiling Light Installation">
                         <img src="assets/electrical light 1.jpg" alt="Ceiling light fixture installed in Calgary hallway" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Ceiling Light Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"> data-category="electrical" data-img="assets/electrical light 2.jpg" data-title="Light Fixture Replacement"
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/electrical light 2.jpg" data-title="Light Fixture Replacement">
                         <img src="assets/electrical light 2.jpg" alt="Round ceiling light mounted in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Light Fixture Replacement</p>
@@ -2968,28 +2968,28 @@
                     </figure>
 
                     <!-- Baseboard Installation (4 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300"> data-category="baseboard" data-img="assets/baseboard 4.jpg" data-title="Baseboard Installation"
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/baseboard 4.jpg" data-title="Baseboard Installation">
                         <img src="assets/baseboard 4.jpg" alt="Baseboard installation along freshly painted wall in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Baseboard Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/baseboard3.jpg" data-title="Baseboard Trim Work">
                         <img src="assets/baseboard3.jpg" alt="Professional baseboard trim work in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Baseboard Trim Work</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/instaill baseboard.jpg" data-title="Stairway Baseboard Installation">
                         <img src="assets/instaill baseboard.jpg" alt="Installing new baseboards on stairway in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Stairway Baseboard Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/home minor instaill baseboard.jpg" data-title="Minor Baseboard Repairs">
                         <img src="assets/home minor instaill baseboard.jpg" alt="Minor home repair baseboard installation in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Minor Baseboard Repairs</p>
@@ -2997,21 +2997,21 @@
                     </figure>
 
                     <!-- Door & Hardware (3 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/door handle 1.jpg" data-title="Door Handle Upgrade">
                         <img src="assets/door handle 1.jpg" alt="New black door handle installed on white interior door in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Door Handle Upgrade</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/home repair door handle 1.jpg" data-title="Door Hardware Repair">
                         <img src="assets/home repair door handle 1.jpg" alt="Door handle repair and replacement in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Door Hardware Repair</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/minor home repair door 2.jpg" data-title="Minor Door Repairs">
                         <img src="assets/minor home repair door 2.jpg" alt="Minor door repair work in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Minor Door Repairs</p>
@@ -3019,7 +3019,7 @@
                     </figure>
 
                     <!-- Furniture Assembly (1 photo) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="interior" data-img="assets/furniture assemble 1.jpg" data-title="Furniture Assembly Service">
                         <img src="assets/furniture assemble 1.jpg" alt="Assembled green storage cabinet in Calgary living space" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Furniture Assembly Service</p>
@@ -3027,28 +3027,28 @@
                     </figure>
 
                     <!-- Grout & Tile Work (4 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/grout 1.jpg" data-title="Tile Grout Repair">
                         <img src="assets/grout 1.jpg" alt="Applying new grout between floor tiles in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Tile Grout Repair</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/grout 2.jpg" data-title="Bathroom Grout Refresh">
                         <img src="assets/grout 2.jpg" alt="Professional grout work in Calgary bathroom" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Bathroom Grout Refresh</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/grout 3.jpg" data-title="Tile Grout Installation">
                         <img src="assets/grout 3.jpg" alt="Tile grout installation in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Tile Grout Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/re grout 1.jpg" data-title="Professional Re-Grouting">
                         <img src="assets/re grout 1.jpg" alt="Professional re-grouting service in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Professional Re-Grouting</p>
@@ -3056,28 +3056,28 @@
                     </figure>
 
                     <!-- Painting (4 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="finishing" data-img="assets/home painting renovation 1.jpg" data-title="Interior Painting & Renovation">
                         <img src="assets/home painting renovation 1.jpg" alt="Interior painting and renovation work in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Interior Painting & Renovation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="finishing" data-img="assets/home painting renovation 3.jpg" data-title="Room Painting Service">
                         <img src="assets/home painting renovation 3.jpg" alt="Professional painting services in Calgary residence" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Room Painting Service</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="finishing" data-img="assets/home peinting renovation 2.jpg" data-title="Home Painting Renovation">
                         <img src="assets/home peinting renovation 2.jpg" alt="Home painting renovation in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Home Painting Renovation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="finishing" data-img="assets/paiunting 1.jpg" data-title="Quality Painting Work">
                         <img src="assets/paiunting 1.jpg" alt="Quality painting service in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Quality Painting Work</p>
@@ -3085,60 +3085,65 @@
                     </figure>
 
                     <!-- Plumbing Work (11 photos) -->
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing 1.jpg" data-title="Plumbing Repair">
                         <img src="assets/plumbing 1.jpg" alt="Plumbing repair services in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Plumbing Repair</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing 3.jpg" data-title="Plumbing Installation">
                         <img src="assets/plumbing 3.jpg" alt="Professional plumbing work in Calgary home" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Plumbing Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing 4.jpg" data-title="Plumbing Fixture Repair">
                         <img src="assets/plumbing 4.jpg" alt="Plumbing fixture repair in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Plumbing Fixture Repair</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing 6.jpg" data-title="Plumbing Maintenance">
                         <img src="assets/plumbing 6.jpg" alt="Plumbing maintenance service in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Plumbing Maintenance</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing bidet 1.jpg" data-title="Bidet Installation">
                         <img src="assets/plumbing bidet 1.jpg" alt="Bidet installation service in Calgary bathroom" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Bidet Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing bidet 2.jpg" data-title="Bidet Setup Service">
                         <img src="assets/plumbing bidet 2.jpg" alt="Professional bidet installation in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Bidet Setup Service</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing faucet 1.jpg" data-title="Kitchen Faucet Installation">
                         <img src="assets/plumbing faucet 1.jpg" alt="Kitchen faucet installation and repair in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
                         <figcaption class="p-4 bg-white text-center">
                             <p class="font-semibold text-gray-800">Kitchen Faucet Installation</p>
                         </figcaption>
                     </figure>
 
-                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <img src="assets/plumbing faucet 3.jpg"
+                    <figure class="gallery-item overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300" data-category="plumbing" data-img="assets/plumbing faucet 3.jpg" data-title="Bathroom Faucet Upgrade">
+                        <img src="assets/plumbing faucet 3.jpg" alt="Bathroom faucet repair in Calgary" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-300">
+                        <figcaption class="p-4 bg-white text-center">
+                            <p class="font-semibold text-gray-800">Bathroom Faucet Upgrade</p>
+                        </figcaption>
+                    </figure>
+                </div>
 
-                        
-                        <div class="bg-yellow-50 rounded-xl p-6 mb-8 border-l-4 border-yellow-400">
+                <div class="mt-8">
+                    <div class="bg-yellow-50 rounded-xl p-6 mb-8 border-l-4 border-yellow-400">
                             <div class="flex items-start space-x-3">
                                 <i class="fas fa-lightbulb text-yellow-600 text-xl mt-1"></i>
                                 <div class="text-left">
@@ -3149,7 +3154,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="flex flex-col sm:flex-row gap-4 justify-center">
                             <a href="tel:+14034614332" class="bg-orange text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition-colors inline-flex items-center justify-center space-x-3 shadow-lg transform hover:scale-105">
                                 <i class="fas fa-phone text-xl"></i>
@@ -3310,7 +3315,7 @@
                     <h2 class="section-title text-3xl md:text-4xl font-black text-gray-700 mb-8 text-center">
                         Looking for a <span class="text-orange">Licensed Handyman in Calgary?</span>
                     </h2>
-                    
+
                     <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                         <p class="text-lg mb-6">
                             When you need a reliable <strong>handyman Calgary</strong> residents trust, Nestor's Home Help is your go-to solution. As a <strong>licensed handyman Calgary</strong> business, we provide comprehensive home repair and improvement services throughout Calgary, Airdrie, and Okotoks. Our commitment to quality workmanship and customer satisfaction has made us the preferred choice for homeowners seeking an <strong>affordable handyman Calgary</strong> service provider.
@@ -3319,7 +3324,7 @@
                         <h3 class="text-2xl font-bold text-navy mb-4 mt-8">
                             Professional TV Mounting and Furniture Assembly Services
                         </h3>
-                        
+
                         <p class="mb-6">
                             Specializing in <strong>TV mounting Calgary</strong> installations, we ensure your entertainment system is securely mounted with professional cable management. Our <strong>furniture assembly Calgary</strong> services cover everything from IKEA furniture to custom pieces, delivered with precision and care. Whether you're in downtown Calgary, Airdrie, or Okotoks, our experienced team brings the tools and expertise needed for flawless results.
                         </p>
@@ -3327,7 +3332,7 @@
                         <h3 class="text-2xl font-bold text-navy mb-4 mt-8">
                             Same Day Handyman Services Across Calgary and Surrounding Areas
                         </h3>
-                        
+
                         <p class="mb-6">
                             Need urgent repairs? Our <strong>same day handyman Calgary</strong> service is available for emergency situations. From plumbing leaks to electrical issues, drywall repairs to door installations, we respond quickly to minimize disruption to your daily routine. Our service areas include Calgary, <strong>handyman Airdrie</strong>, and <strong>handyman Okotoks</strong>, ensuring professional support wherever you are in the region.
                         </p>
@@ -3358,8 +3363,8 @@
             <div class="container mx-auto px-6 relative z-10">
                  <div class="footer-links">
     <p>Areas Served:</p>
-    <a href="airdrie-handyman.html">Handyman Airdrie</a> | 
-    <a href="okotoks-handyman.html">Handyman Okotoks</a> | 
+    <a href="airdrie-handyman.html">Handyman Airdrie</a> |
+    <a href="okotoks-handyman.html">Handyman Okotoks</a> |
 </div>
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                     <div class="col-span-2">
@@ -3422,44 +3427,44 @@
             function toggleMobileMenu() {
                 const menu = document.getElementById('mobile-menu');
                 const hamburger = document.querySelector('.hamburger');
-                
+
                 if (menu.classList.contains('opacity-0')) {
                     openMobileMenu();
                 } else {
                     closeMobileMenu();
                 }
             }
-            
+
             function openMobileMenu() {
                 const menu = document.getElementById('mobile-menu');
                 const hamburger = document.querySelector('.hamburger');
-                
+
                 menu.classList.remove('opacity-0', 'invisible');
                 menu.classList.add('active');
                 hamburger.classList.add('active');
                 document.body.style.overflow = 'hidden';
             }
-            
+
             function closeMobileMenu() {
                 const menu = document.getElementById('mobile-menu');
                 const hamburger = document.querySelector('.hamburger');
-                
+
                 menu.classList.add('opacity-0', 'invisible');
                 menu.classList.remove('active');
                 hamburger.classList.remove('active');
                 document.body.style.overflow = '';
             }
-            
+
             // Close menu when clicking outside
             document.addEventListener('click', function(event) {
                 const menu = document.getElementById('mobile-menu');
                 const hamburger = document.querySelector('.hamburger');
-                
+
                 if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
                     closeMobileMenu();
                 }
             });
-            
+
             document.addEventListener('DOMContentLoaded', function () {
                 // Мобільні картки тепер статичні - додаткова ініціалізація не потрібна
                 // Smooth scrolling for navigation links
@@ -3560,13 +3565,13 @@
                             btn.classList.remove('active', 'bg-orange', 'text-white');
                             btn.classList.add('bg-gray-100', 'text-gray-700');
                         });
-                        
+
                         // Add active class to clicked button
                         button.classList.add('active', 'bg-orange', 'text-white');
                         button.classList.remove('bg-gray-100', 'text-gray-700');
-                        
+
                         const filter = button.getAttribute('data-filter');
-                        
+
                         // Filter gallery items
                         galleryItems.forEach(item => {
                             if (filter === 'all' || item.getAttribute('data-category') === filter) {
@@ -3642,7 +3647,7 @@
       block.style.maxHeight = 'none';
       const realHeight = block.scrollHeight;
       block.style.maxHeight = '0px';
-      
+
       // Викликаємо анімацію
       setTimeout(() => {
         block.style.maxHeight = realHeight + "px";
@@ -3675,7 +3680,7 @@
                 block.style.maxHeight = 'none';
                 const realHeight = block.scrollHeight;
                 block.style.maxHeight = '0px';
-                
+
                 setTimeout(() => {
                   block.style.maxHeight = realHeight + "px";
                   label.textContent = 'Hide Service Pricing';
@@ -3685,7 +3690,7 @@
                 }, 100);
               }
             }, 300);
-            
+
             // Припиняємо спостереження після першого спрацювання
             pricingObserver.unobserve(entry.target);
           }
@@ -3710,7 +3715,7 @@
       }, 100);
     }
   });
-  
+
   // Enhanced form functionality
   document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
@@ -3721,7 +3726,7 @@
     // Enhanced photo upload with drag & drop
     if (photoInput && photoPreview) {
       const photoContainer = photoInput.closest('div');
-      
+
       // Drag and drop functionality
       photoContainer.addEventListener('dragover', (e) => {
         e.preventDefault();
@@ -3753,11 +3758,11 @@
             reader.onload = (e) => {
               const imgContainer = document.createElement('div');
               imgContainer.className = 'relative';
-              
+
               const img = document.createElement('img');
               img.src = e.target.result;
               img.className = 'w-full h-20 object-cover rounded border';
-              
+
               const removeBtn = document.createElement('button');
               removeBtn.innerHTML = '×';
               removeBtn.className = 'absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-6 h-6 text-sm hover:bg-red-600';
@@ -3766,7 +3771,7 @@
                 if (index > -1) uploadedFiles.splice(index, 1);
                 imgContainer.remove();
               };
-              
+
               imgContainer.appendChild(img);
               imgContainer.appendChild(removeBtn);
               photoPreview.appendChild(imgContainer);
@@ -3781,11 +3786,11 @@
     if (contactForm) {
       contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         // Basic validation
         const requiredFields = contactForm.querySelectorAll('[required]');
         let isValid = true;
-        
+
         requiredFields.forEach(field => {
           if (!field.value.trim()) {
             field.classList.add('border-red-500');
@@ -3794,12 +3799,12 @@
             field.classList.remove('border-red-500');
           }
         });
-        
+
         if (!isValid) {
           alert('Please fill in all required fields.');
           return;
         }
-        
+
         // Show loading state
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
@@ -3808,7 +3813,7 @@
 
         // Get form data
         const formData = new FormData(contactForm);
-        
+
         // Add uploaded files
         uploadedFiles.forEach((file, index) => {
           formData.append(`photo_${index}`, file);
@@ -3818,28 +3823,28 @@
           // In real implementation, send to your backend endpoint
           // For demo purposes, we'll simulate the submission
           await new Promise(resolve => setTimeout(resolve, 2000));
-          
+
           // Show success message
           const successMessage = document.createElement('div');
           successMessage.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg z-50';
           successMessage.innerHTML = '<i class="fas fa-check mr-2"></i>Message sent successfully! We\'ll contact you within 24 hours.';
           document.body.appendChild(successMessage);
-          
+
           // Auto remove success message
           setTimeout(() => successMessage.remove(), 5000);
-          
+
           // Reset form
           contactForm.reset();
           photoPreview.innerHTML = '';
           uploadedFiles = [];
-          
+
         } catch (error) {
           // Show error message
           const errorMessage = document.createElement('div');
           errorMessage.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg z-50';
           errorMessage.innerHTML = '<i class="fas fa-exclamation-triangle mr-2"></i>Error sending message. Please call us directly at (403) 461-4332.';
           document.body.appendChild(errorMessage);
-          
+
           setTimeout(() => errorMessage.remove(), 5000);
         } finally {
           submitBtn.innerHTML = originalText;
@@ -3851,13 +3856,13 @@
     // Enhanced mobile menu with better animations
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
-    
+
     if (mobileMenuToggle && mobileMenu) {
       mobileMenuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('translate-x-full');
         document.body.classList.toggle('overflow-hidden');
       });
-      
+
       // Close mobile menu when clicking outside
       document.addEventListener('click', (e) => {
         if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
@@ -3865,7 +3870,7 @@
           document.body.classList.remove('overflow-hidden');
         }
       });
-      
+
       // Close mobile menu when clicking on menu items
       const mobileMenuItems = mobileMenu.querySelectorAll('a');
       mobileMenuItems.forEach(item => {
@@ -3886,7 +3891,7 @@
           const headerOffset = 80;
           const elementPosition = target.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
@@ -3922,7 +3927,7 @@
           }
         });
       });
-      
+
       lazyImages.forEach(img => imageObserver.observe(img));
     }
     // Add scroll-to-top button
@@ -3966,7 +3971,7 @@
         const lightboxCounter = document.getElementById('lightboxCounter');
         let currentImageIndex = 0;
         let galleryImages = [];
-        
+
         function collectGalleryImages() {
             const visibleItems = document.querySelectorAll('.gallery-item:not([style*="display: none"])');
             galleryImages = Array.from(visibleItems).map(item => ({
@@ -3975,7 +3980,7 @@
                 alt: item.querySelector('img').alt
             }));
         }
-        
+
         function openLightbox(index) {
             collectGalleryImages();
             currentImageIndex = index;
@@ -3987,12 +3992,12 @@
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
-        
+
         function closeLightbox() {
             lightbox.classList.remove('active');
             document.body.style.overflow = '';
         }
-        
+
         function showPrevImage() {
             currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
             const img = galleryImages[currentImageIndex];
@@ -4001,7 +4006,7 @@
             lightboxTitle.textContent = img.title;
             lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
         }
-        
+
         function showNextImage() {
             currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
             const img = galleryImages[currentImageIndex];
@@ -4010,22 +4015,22 @@
             lightboxTitle.textContent = img.title;
             lightboxCounter.textContent = `${currentImageIndex + 1} / ${galleryImages.length}`;
         }
-        
+
         document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
         document.getElementById('lightboxPrev').addEventListener('click', showPrevImage);
         document.getElementById('lightboxNext').addEventListener('click', showNextImage);
-        
+
         lightbox.addEventListener('click', function(e) {
             if (e.target === lightbox) closeLightbox();
         });
-        
+
         document.addEventListener('keydown', function(e) {
             if (!lightbox.classList.contains('active')) return;
             if (e.key === 'Escape') closeLightbox();
             if (e.key === 'ArrowLeft') showPrevImage();
             if (e.key === 'ArrowRight') showNextImage();
         });
-        
+
         document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.gallery-item').forEach((item, index) => {
                 item.style.cursor = 'pointer';
