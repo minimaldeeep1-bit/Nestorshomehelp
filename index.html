@@ -794,8 +794,8 @@
     <header class="fixed w-full navy-bg shadow-lg z-50 transition-all duration-300" style="top: 0;">
          <div class="container mx-auto px-6 py-2 flex justify-between items-center text-sm border-b border-white/10">
         <div class="flex items-center space-x-4">
-            <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" rel="noopener" class="hover:text-[var(--orange)] transition duration-300"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=61583910731270" target="_blank" rel="noopener" class="hover:text-[var(--orange)] transition duration-300"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" rel="noopener" class="hover:text-[var(--orange)] transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61583910731270" target="_blank" rel="noopener" class="hover:text-[var(--orange)] transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         </div>
         <div class="flex items-center space-x-4">
             <div class="hidden lg:flex items-center text-white/80 text-xs mr-4">
@@ -1204,7 +1204,7 @@
             </div>
             <div class="md:hidden flex items-center justify-between">
                 <img src="assets/logo 11.png" alt="Nestor's Home Help" class="h-12 w-auto">
-                <button onclick="toggleMobileMenu()" class="hamburger text-white text-2xl p-2 hover:text-orange transition-colors">
+                <button onclick="toggleMobileMenu()" class="hamburger text-white text-2xl p-2 hover:text-orange transition-colors" aria-label="Toggle Mobile Menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
@@ -1219,7 +1219,7 @@
                         <div class="absolute bottom-40 left-16 w-20 h-20 bg-gradient-to-br from-orange to-yellow-400 rounded-full floating-element shadow-lg" style="animation-delay: 4s;"></div>
                         <div class="absolute top-1/3 right-1/4 w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-500 rounded-full floating-element shadow-md" style="animation-delay: 1.5s;"></div>
                     </div>
-                    <button onclick="closeMobileMenu()" class="absolute top-6 right-6 text-white text-2xl hover:text-orange transition-colors w-12 h-12 flex items-center justify-center bg-white/25 hover:bg-white/35 rounded-full shadow-lg" style="z-index: 202;">
+                    <button onclick="closeMobileMenu()" class="absolute top-6 right-6 text-white text-2xl hover:text-orange transition-colors w-12 h-12 flex items-center justify-center bg-white/25 hover:bg-white/35 rounded-full shadow-lg" style="z-index: 202;" aria-label="Close Mobile Menu">
                         <i class="fas fa-times"></i>
                     </button>
                     
@@ -1273,10 +1273,10 @@
                             
                             <!-- Social Links Mobile -->
                             <div class="flex justify-center space-x-4 pt-4">
-                                <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-orange hover:text-white transition-colors">
+                                <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-orange hover:text-white transition-colors" aria-label="Instagram">
                                     <i class="fab fa-instagram"></i>
                                 </a>
-                                <a href="https://www.facebook.com/61583910731270" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-orange hover:text-white transition-colors">
+                                <a href="https://www.facebook.com/61583910731270" target="_blank" class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-orange hover:text-white transition-colors" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </div>
