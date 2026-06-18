@@ -111,12 +111,7 @@
     "Interior Repairs"
   ],
   "priceRange": "$60-$450",
-  "paymentAccepted": [
-  "Cash",
-  "E-Transfer",
-  "Debit",
-  "Credit Card"
-]
+  "paymentAccepted": "Cash, E-Transfer", Debit, Credit
   "currenciesAccepted": "CAD",
   "openingHours": "Mo-Sa 08:00-22:00",
   "image": "https://nestorshomehelp.ca/assets/logo 1.png",
@@ -1293,72 +1288,112 @@
     </header>
 
     <main>
-        <section id="hero-slider" style="padding-top: 80px;">
-            <div class="slide active" style="background-image: url('assets/hero-slide-1.png');"></div>
-            <div class="slide" style="background-image: url('assets/hero-slide-2.png');"></div>
-            <div class="slide" style="background-image: url('assets/GKKk9aMG1Wmlz8WdVqu_4.png');"></div>
-            <div class="slide" style="background-image: url('assets/OJVyr1lA-zK4lO5NezKae.png');"></div>
+        <!-- Modern Hero Section -->
+        <!-- Modern Hero Section (Split Layout) -->
+        <section id="hero-slider" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1E3A5F] to-[#112238]" style="padding-top: 100px; padding-bottom: 60px;">
             
-            <div id="hero-content-container" class="hero-content active px-4">
-                <div class="container mx-auto px-4 py-8 md:py-20">
-                    <div class="text-center mb-8 md:mb-16">
-                        <h1 class="hero-title text-xl sm:text-2xl md:text-3xl font-black mb-4 leading-tight drop-shadow-lg" style="font-weight: 900; letter-spacing: -0.02em;">
-    <span class="text-white">HANDYMAN SERVICE IN</span> <span class="text-orange">CALGARY & AREA.</span>
-</h1>
+            <!-- Декоративні елементи фону (світлові плями) -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-[var(--orange)] opacity-10 blur-[100px]"></div>
+                <div class="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-blue-500 opacity-10 blur-[120px]"></div>
+            </div>
 
-<h2 class="hero-title text-base sm:text-lg md:text-xl font-semibold mb-8 leading-tight drop-shadow-lg" style="font-weight: 600; letter-spacing: 0.05em;">
-    <span class="text-orange">CALL NOW</span> <span class="text-white">TO FIX YOUR HOME TODAY!</span>
-</h2>
-</p>
-                        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-6">
-                            <a href="#request" class="btn-text bg-orange hover:bg-transparent hover:text-orange hover:border hover:border-orange text-white px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all transform hover:scale-105 shadow-lg">
-                                Submit Request
-                            </a>
-                            <a href="tel:+14034614332" class="btn-text border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all inline-block shadow-lg hover:scale-105">
-                                 Call/Text (403) 461-4332
-                            </a>
-                            <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" rel="noopener" class="btn-text border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all inline-block shadow-lg hover:scale-105 flex items-center justify-center">
-                    <i class="fab fa-instagram mr-2"></i> Instagram
-                </a>
-                
-                <a href="https://www.facebook.com/61583910731270" target="_blank" rel="noopener" class="btn-text border-2 border-white text-white hover:bg-white hover:text-[var(--navy)] px-6 md:px-8 py-3 rounded-full text-sm md:text-lg font-semibold transition-all inline-block shadow-lg hover:scale-105 flex items-center justify-center">
-                    <i class="fab fa-facebook-f mr-2"></i> Facebook
-                </a>
+            <!-- Hero Content Container -->
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+                    
+                    <!-- Ліва колонка: Текст і кнопки -->
+                    <div class="w-full lg:w-1/2 text-left pt-6 lg:pt-0">
+                        
+                        <!-- Trust Signal (Елемент довіри) -->
+                        <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-4 py-1.5 mb-6 animate-fade-in-up">
+                            <div class="flex text-[var(--orange)] text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-white text-sm font-medium">5.0 Rated Handyman in Calgary</span>
+                        </div>
+
+                        <!-- Головний Заголовок (H1) -->
+                        <h1 class="text-4xl sm:text-5xl md:text-6xl font-black text-white leading-[1.1] mb-6 drop-shadow-lg" style="letter-spacing: -0.02em;">
+                            Professional <br>
+                            <span class="text-[var(--orange)]">Handyman Services</span> <br>
+                            in Calgary & Area.
+                        </h1>
+
+                        <!-- Підзаголовок -->
+                        <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-xl font-medium leading-relaxed drop-shadow-md">
+                            Licensed, insured, and ready to tackle your home projects. From TV mounting to minor plumbing, we treat your home like our own.
+                        </p>
+
+                        <!-- БЛОК КНОПОК -->
+                        <div class="flex flex-col gap-4 mb-8">
+                            
+                            <!-- Верхній ряд: Головні дії (Дзвінок та Заявка) -->
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a href="#request" class="bg-[var(--orange)] hover:bg-[var(--orange)]/90 text-white px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1 shadow-[0_10px_20px_rgba(255,107,53,0.3)] flex items-center justify-center">
+                                    Submit Request
+                                </a>
+                                <a href="tel:+14034614332" class="bg-white/10 backdrop-blur border-2 border-white/30 text-white hover:bg-white hover:text-[var(--navy)] px-8 py-4 rounded-full text-lg font-bold transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center">
+                                    <i class="fas fa-phone-alt mr-3"></i> Call (403) 461-4332
+                                </a>
+                            </div>
+
+                            <!-- Нижній ряд: Соціальні мережі (Інстаграм та Фейсбук) -->
+                            <div class="flex flex-col sm:flex-row gap-4 mt-2">
+                                <a href="https://www.instagram.com/nestorshomehelp/" target="_blank" rel="noopener" class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] hover:opacity-90 text-white px-8 py-3.5 rounded-full text-base font-semibold transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center sm:flex-1">
+                                    <i class="fab fa-instagram mr-2 text-xl"></i> Instagram
+                                </a>
+                                <a href="https://www.facebook.com/61583910731270" target="_blank" rel="noopener" class="bg-[#1877F2] hover:bg-[#166FE5] text-white px-8 py-3.5 rounded-full text-base font-semibold transition-all transform hover:-translate-y-1 shadow-lg flex items-center justify-center sm:flex-1">
+                                    <i class="fab fa-facebook-f mr-2 text-xl"></i> Facebook
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- Короткі переваги під кнопками -->
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-300 font-medium">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-[var(--orange)] mr-2"></i> Same Day Service Available
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-[var(--orange)] mr-2"></i> Licensed & Insured
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Права колонка: Фотографія -->
+                    <div class="w-full lg:w-1/2 relative mt-8 lg:mt-0 flex justify-center">
+                        <!-- Декоративна підкладка під фото (оранжева лінія/тінь) -->
+                        <div class="absolute inset-0 bg-[var(--orange)] rounded-[2rem] transform translate-x-4 translate-y-4 opacity-50 blur-sm max-w-md mx-auto hidden md:block"></div>
+                        
+                        <!-- ВАШЕ ФОТО -->
+                        <!-- Важливо: перевірте, чи файл дійсно лежить у папці assets і має таку саму назву -->
+                        <img src="assets/hero photo Handyman Calgary.png" 
+                             alt="Vitalii Nestorenko - Professional Handyman in Calgary" 
+                             class="relative z-10 w-full max-w-md mx-auto rounded-[2rem] shadow-2xl border-4 border-white/10 object-cover"
+                             style="aspect-ratio: 4/5; object-position: center top;">
+                             
+                        <!-- Плашка "Local Expert" поверх фото -->
+                        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:-left-6 z-20 bg-white text-[var(--navy)] px-6 py-3 rounded-xl shadow-xl flex items-center space-x-3 w-[220px]">
+                            <div class="bg-green-100 p-2 rounded-full text-green-600">
+                                <i class="fas fa-shield-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-gray-500 uppercase">Local Expert</p>
+                                <p class="text-sm font-black leading-tight">Calgary & Area</p>
+                            </div>
                         </div>
                     </div>
-        
-                    <div id="services" class="services-grid flex flex-col md:flex-row gap-4 md:gap-1 lg:gap-3 xl:gap-4 max-w-7xl mx-auto transition-all duration-600 px-4 md:px-0">
-                        <div class="hero-card service-bg-1 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">0
-                            <div class="hero-card-header text-center">
-                                <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Interior Repairs & Renovations</h3>
-                            </div>
-                        </div>
-        
-                        <div class="hero-card service-bg-2 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
-                            <div class="hero-card-header text-center">
-                                <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Mounting & Installation</h3>
-                            </div>
-                        </div>
-        
-                        <div class="hero-card service-bg-3 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
-                            <div class="hero-card-header text-center">
-                                <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Finishing & Decorating</h3>
-                            </div>
-                        </div>
-        
-                        <div class="hero-card service-bg-4 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
-                            <div class="hero-card-header text-center">
-                                <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Plumbing & Electrical</h3>
-                            </div>
-                        </div>
-        
-                        <div class="hero-card service-bg-5 rounded-lg md:rounded-2xl p-2 md:p-4 lg:p-6 cursor-pointer">
-                            <div class="hero-card-header text-center">
-                                <h3 class="text-xs sm:text-sm md:text-base lg:text-xl font-bold text-white mb-1 sm:mb-2 md:mb-4 leading-tight drop-shadow-md">Outdoor Services</h3>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
+            </div>
+
+            <!-- Декоративний елемент внизу (Хвиля) -->
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20">
+                <svg class="relative block w-full h-[40px] md:h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-[#F5F5F5]"></path>
+                </svg>
             </div>
         </section>
 
@@ -1996,560 +2031,6 @@
                                 <p class="text-white text-lg">Professional handyman services with transparent pricing</p>
                             </div>
                             <!-- КНОПКА ДЛЯ ВІДКРИТТЯ -->
-<div class="mb-6 text-center">
-  <button onclick="togglePricing()" id="toggle-pricing-btn" class="bg-orange text-white px-6 py-3 rounded-full font-semibold text-lg transition-all hover:bg-transparent hover:text-orange hover:border hover:border-orange inline-flex items-center gap-2">
-  <span>Show Service Pricing</span>
-  <i class="fas fa-chevron-down transition-transform duration-300"></i>
-</button>
-</div>
-
-<!-- ТАБЛИЦЯ ЦІН (спочатку схована) -->
-<div id="pricing-table" class="max-h-0 overflow-hidden transition-all duration-700 ease-in-out">
-  
-  <!-- 📱 Мобільна версія (картки) -->
-  <div class="lg:hidden space-y-6 mobile-pricing-cards px-2 mb-8">
-    <!-- Mounting & Assembly Section -->
-    <div class="bg-orange-50 rounded-xl p-5 border-l-4 border-orange shadow-sm">
-      <h4 class="font-bold text-orange text-xl mb-4 flex items-center">
-        <i class="fas fa-hammer mr-3 text-lg"></i> Mounting & Assembly
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-xl p-4 shadow-md border border-gray-100">
-          <div class="flex justify-between items-start mb-2">
-            <h5 class="font-semibold text-gray-800 text-base leading-tight">TV Wall Mounting</h5>
-            <span class="font-bold text-orange text-base ml-2">C$90 – $150</span>
-          </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Secure mounting on drywall or concrete. Depends on TV size and wall type.</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-2">
-            <h5 class="font-semibold text-gray-800 text-base leading-tight">Furniture Assembly</h5>
-            <span class="font-bold text-orange text-base ml-2">C$60/hour</span>
-          </div>
-          <p class="text-sm text-gray-600 leading-relaxed">Fast and quality assembly according to instructions.</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Single Item Assembly</h5>
-            <span class="font-bold text-orange text-sm">C$70 – $150</span>
-          </div>
-          <p class="text-xs text-gray-600">Fixed price alternative for standard furniture</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Shelves, Pictures, Mirrors</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Perfect for multiple small tasks in one visit</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Curtain Rod Installation</h5>
-            <span class="font-bold text-orange text-sm">C$60 – $100</span>
-          </div>
-          <p class="text-xs text-gray-600">Depends on length and wall type</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Small Repairs Section -->
-    <div class="bg-blue-50 rounded-xl p-5 border-l-4 border-blue-500 shadow-sm">
-      <h4 class="font-bold text-blue-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-tools mr-3 text-lg"></i> Small Repairs & Interior Work
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Drywall Repair</h5>
-            <span class="font-bold text-orange text-sm">C$90 – $180</span>
-          </div>
-          <p class="text-xs text-gray-600">Includes filling and sanding, ready for primer/paint</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Door Repair & Adjustment</h5>
-            <span class="font-bold text-orange text-sm">C$60 – $120</span>
-          </div>
-          <p class="text-xs text-gray-600">Usually performed within the minimum call-out.</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Interior Door Installation</h5>
-            <span class="font-bold text-orange text-sm">C$120 – $250</span>
-          </div>
-          <p class="text-xs text-gray-600">Removal of old, installation in existing frame</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Kitchen Cabinet Repair</h5>
-            <span class="font-bold text-orange text-sm">C$60 – $120</span>
-          </div>
-          <p class="text-xs text-gray-600">Hinge adjustment, handle replacement</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Caulking Renewal</h5>
-            <span class="font-bold text-orange text-sm">C$75 – $180</span>
-          </div>
-          <p class="text-xs text-gray-600">Remove old and apply new sealant</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Painting Section -->
-    <div class="bg-green-50 rounded-xl p-5 border-l-4 border-green-500 shadow-sm">
-      <h4 class="font-bold text-green-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-paint-brush mr-3 text-lg"></i> Painting & Finishing
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Touch-Up Painting</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Careful repair of scratches and scuffs</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Small Room Painting</h5>
-            <span class="font-bold text-orange text-sm">C$300 – $500</span>
-          </div>
-          <p class="text-xs text-gray-600">Standard room (10'x12'), includes prep and two coats</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Flooring Section -->
-    <div class="bg-purple-50 rounded-xl p-5 border-l-4 border-purple-500 shadow-sm">
-      <h4 class="font-bold text-purple-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-layer-group mr-3 text-lg"></i> Flooring Work
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Vinyl/Laminate Floor Repair</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Replace damaged planks, fix scratches</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Floor Replacement</h5>
-            <span class="font-bold text-orange text-sm">From C$1.85/sq ft</span>
-          </div>
-          <p class="text-xs text-gray-600">Additional charges for old floor removal (from C$0.95/sq ft)</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Laminate Installation</h5>
-            <span class="font-bold text-orange text-sm">C$1.85 – $2.85/sq ft</span>
-          </div>
-          <p class="text-xs text-gray-600">Cost depends on room complexity and lock type</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">LVP Installation</h5>
-            <span class="font-bold text-orange text-sm">C$1.85 – $2.85/sq ft</span>
-          </div>
-          <p class="text-xs text-gray-600">For floating floor (click-lock)</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Plumbing Section -->
-    <div class="bg-cyan-50 rounded-xl p-5 border-l-4 border-cyan-500 shadow-sm">
-      <h4 class="font-bold text-cyan-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-tint mr-3 text-lg"></i> Small Plumbing Work
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Faucet Replacement</h5>
-            <span class="font-bold text-orange text-sm">C$90 – $150</span>
-          </div>
-          <p class="text-xs text-gray-600">Kitchen, bathroom - removal and new installation</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Toilet Tank Repair</h5>
-            <span class="font-bold text-orange text-sm">C$80 – $140</span>
-          </div>
-          <p class="text-xs text-gray-600">Fix leaks, replace fill/flush mechanisms</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Showerhead/Drain Replacement</h5>
-            <span class="font-bold text-orange text-sm">C$60 – $100</span>
-          </div>
-          <p class="text-xs text-gray-600">Quick replacement for your convenience</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Sink Installation</h5>
-            <span class="font-bold text-orange text-sm">C$200 – $400</span>
-          </div>
-          <p class="text-xs text-gray-600">Standard drop-in sink in existing countertop</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Toilet Installation</h5>
-            <span class="font-bold text-orange text-sm">C$200 – $450</span>
-          </div>
-          <p class="text-xs text-gray-600">Standard toilet replacement</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Electrical Section -->
-    <div class="bg-yellow-50 rounded-xl p-5 border-l-4 border-yellow-500 shadow-sm">
-      <h4 class="font-bold text-yellow-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-bolt mr-3 text-lg"></i> Small Electrical Work
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Light Fixture Replacement</h5>
-            <span class="font-bold text-orange text-sm">C$90 – $150</span>
-          </div>
-          <p class="text-xs text-gray-600">Safe removal and installation on existing wiring</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Switch/Outlet Replacement</h5>
-            <span class="font-bold text-orange text-sm">C$50 – $90 each</span>
-          </div>
-          <p class="text-xs text-gray-600">Lower price per unit for multiple units</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Outdoor Section -->
-    <div class="bg-green-100 rounded-xl p-5 border-l-4 border-green-600 shadow-sm">
-      <h4 class="font-bold text-green-700 text-xl mb-4 flex items-center">
-        <i class="fas fa-seedling mr-3 text-lg"></i> Outdoor & Yard Work
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Landscape Edging Installation</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Plastic or wooden borders for beds and paths</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Fence/Deck Repair</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Small repairs, board replacement</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Seasonal Yard Cleanup</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Leaves, branches - preparing your yard for new season</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibent text-gray-800 text-sm">Window Well Cleaning</h5>
-            <span class="font-bold text-orange text-sm">C$50 – $90</span>
-          </div>
-          <p class="text-xs text-gray-600">Debris removal and drainage check</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Demolition Section -->
-    <div class="bg-red-50 rounded-xl p-5 border-l-4 border-red-500 shadow-sm">
-      <h4 class="font-bold text-red-600 text-xl mb-4 flex items-center">
-        <i class="fas fa-hammer mr-3 text-lg"></i> Demolition & Cleaning
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Small Demolition</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Furniture, light structures - careful demolition</p>
-        </div>
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Waste & Construction Debris Removal</h5>
-            <span class="font-bold text-orange text-sm">Individual Quote</span>
-          </div>
-          <p class="text-xs text-gray-600">Price depends on volume and weight</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Other Services -->
-    <div class="bg-gray-100 rounded-xl p-5 border-l-4 border-gray-500 shadow-sm">
-      <h4 class="font-bold text-gray-700 text-xl mb-4 flex items-center">
-        <i class="fas fa-star mr-3 text-lg"></i> Other Services
-      </h4>
-      <div class="space-y-4">
-        <div class="bg-white rounded-lg p-3 shadow-sm">
-          <div class="flex justify-between items-start mb-1">
-            <h5 class="font-semibold text-gray-800 text-sm">Other Small Jobs</h5>
-            <span class="font-bold text-orange text-sm">C$60/hour</span>
-          </div>
-          <p class="text-xs text-gray-600">Don't see what you need? Contact us! Price discussed individually</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Note -->
-    <div class="mt-8 p-5 bg-navy rounded-xl shadow-lg">
-      <p class="text-sm text-white mb-3 leading-relaxed">
-        <strong>📝 Important:</strong> <span class="text-red-400 font-bold">⚠️ All prices are approximate and subject to change</span>. The final price can only be determined after <span class="text-white font-bold">consultation with handyman</span>. Materials are excluded from listed prices.
-      </p>
-      <p class="text-sm text-white leading-relaxed">
-        <strong>💰 Call-out:</strong> C$60 + First hour (minimum): C$40 = C$85 minimum charge
-      </p>
-    </div>
-  </div>
-  
-  <!-- 🖥️ Десктопна версія -->
-  <div class="hidden lg:block">
-  <div class="overflow-x-auto rounded-2xl border border-gray-200">
-    <table class="w-full">
-                                    <thead class="bg-gradient-to-r from-navy to-blue-700 text-white">
-                                        <tr>
-                                            <th class="text-left py-4 px-4 font-bold text-lg">Service</th>
-                                            <th class="text-left py-4 px-4 font-bold text-lg">Price (CAD)</th>
-                                            <th class="text-left py-4 px-4 font-bold text-lg">What's Included</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-sm">
-                                            <!-- Mounting & Assembly Section -->
-                                            <tr class="bg-orange-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-orange">
-                                                    <i class="fas fa-hammer mr-2"></i> Mounting & Assembly
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">TV Wall Mounting</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$90 – $150</td>
-                                                <td class="py-2 px-2 text-white">Secure mounting on drywall or concrete. Depends on TV size and wall type.</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Furniture Assembly (IKEA, Wayfair)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Fast and quality assembly according to instructions.</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Single Item Assembly (bed, table)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$70 – $150</td>
-                                                <td class="py-2 px-2 text-gray-100">Fixed price alternative for standard furniture</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Shelves, Pictures, Mirrors</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$55/hour</td>
-                                                <td class="py-2 px-2 text-gray-100">Perfect for multiple small tasks in one visit</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Curtain Rod Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60 – $100</td>
-                                                <td class="py-2 px-2 text-gray-100">Depends on length and wall type</td>
-                                            </tr>
-
-                                            <!-- Small Repairs Section -->
-                                            <tr class="bg-blue-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-blue-600">
-                                                    <i class="fas fa-tools mr-2"></i>🛠️ Small Repairs & Interior Work
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Drywall Repair (small holes, cracks)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$90 – $180</td>
-                                                <td class="py-2 px-2 text-gray-100">Includes filling and sanding, ready for primer/paint</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Door Repair & Adjustment</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60 – $120</td>
-                                                <td class="py-2 px-2 text-gray-100">Usually performed within the minimum call-out.</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Interior Door Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$120 – $250</td>
-                                                <td class="py-2 px-2 text-gray-100">Removal of old, installation in existing frame</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Kitchen Cabinet Repair</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60 – $120</td>
-                                                <td class="py-2 px-2 text-gray-100">Hinge adjustment, handle replacement</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Caulking Renewal (kitchen, bathroom)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$75 – $180</td>
-                                                <td class="py-2 px-2 text-gray-100">Remove old and apply new sealant</td>
-                                            </tr>
-
-                                            <!-- Painting Section -->
-                                            <tr class="bg-green-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-green-600">
-                                                    <i class="fas fa-paint-brush mr-2"></i>🎨 Painting & Finishing
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Touch-Up Painting</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-gray-100">Careful repair of scratches and scuffs</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Small Room Painting (walls only)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$300 – $500</td>
-                                                <td class="py-2 px-2 text-gray-100">Standard room (10'x12'), includes prep and two coats</td>
-                                            </tr>
-
-                                            <!-- Flooring Section -->
-                                            <tr class="bg-purple-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-purple-600">
-                                                    <i class="fas fa-layer-group mr-2"></i>🔩 Flooring Work
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Vinyl/Laminate Floor Repair</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Replace damaged planks, fix scratches</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Floor Replacement (labor only)</td>
-                                                <td class="py-2 px-2 font-bold text-orange">From C$1.1/sq ft</td>
-                                                <td class="py-2 px-2 text-white">Additional charges for old floor removal (from C$0.95/sq ft)</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Laminate Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$1.85 – $2.85/sq ft</td>
-                                                <td class="py-2 px-2 text-gray-100">Cost depends on room complexity and lock type</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">LVP Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$1.85 – $2.85/sq ft</td>
-                                                <td class="py-2 px-2 text-gray-100">For floating floor (click-lock)</td>
-                                            </tr>
-
-                                            <!-- Plumbing Section -->
-                                            <tr class="bg-cyan-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-cyan-600">
-                                                    <i class="fas fa-tint mr-2"></i>🚿 Small Plumbing Work
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Faucet Replacement</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$90 – $150</td>
-                                                <td class="py-2 px-2 text-gray-100">Kitchen, bathroom - removal and new installation</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Toilet Tank Repair</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$80 – $140</td>
-                                                <td class="py-2 px-2 text-gray-100">Fix leaks, replace fill/flush mechanisms</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Showerhead/Drain Replacement</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60 – $100</td>
-                                                <td class="py-2 px-2 text-gray-100">Quick replacement for your convenience</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Sink Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$200 – $400</td>
-                                                <td class="py-2 px-2 text-gray-100">Standard drop-in sink in existing countertop</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Toilet Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$200 – $450</td>
-                                                <td class="py-2 px-2 text-gray-100">Standard toilet replacement</td>
-                                            </tr>
-
-                                            <!-- Electrical Section -->
-                                            <tr class="bg-yellow-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-yellow-600">
-                                                    <i class="fas fa-bolt mr-2"></i>⚡ Small Electrical Work
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Light Fixture Replacement</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$90 – $150</td>
-                                                <td class="py-2 px-2 text-gray-100">Safe removal and installation on existing wiring</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Switch/Outlet Replacement</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$50 – $90 each</td>
-                                                <td class="py-2 px-2 text-white">Lower price per unit for multiple units</td>
-                                            </tr>
-
-                                            <!-- Outdoor Section -->
-                                            <tr class="bg-green-100">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-green-700">
-                                                    <i class="fas fa-seedling mr-2"></i>🌿 Outdoor & Yard Work
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Landscape Edging Installation</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Plastic or wooden borders for beds and paths</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Fence/Deck Repair</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Small repairs, board replacement</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Seasonal Yard Cleanup</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Leaves, branches - preparing your yard for new season</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Window Well Cleaning</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$50 – $90</td>
-                                                <td class="py-2 px-2 text-white">Debris removal and drainage check</td>
-                                            </tr>
-
-                                            <!-- Demolition Section -->
-                                            <tr class="bg-red-50">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-red-600">
-                                                    <i class="fas fa-hammer mr-2"></i>🧹 Demolition & Cleaning
-                                                </td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Small Demolition</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Furniture, light structures - careful demolition</td>
-                                            </tr>
-                                            <tr class="border-b border-gray-100">
-                                                <td class="py-2 px-2 font-medium">Waste & Construction Debris Removal</td>
-                                                <td class="py-2 px-2 font-bold text-orange">Individual Quote</td>
-                                                <td class="py-2 px-2 text-white">Price depends on volume and weight</td>
-                                            </tr>
-
-                                            <!-- Other Services -->
-                                            <tr class="bg-gray-100">
-                                                <td colspan="3" class="py-3 px-2 font-bold text-gray-700">
-                                                    <i class="fas fa-star mr-2"></i>✨ Other Services
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="py-2 px-2 font-medium">Other Small Jobs</td>
-                                                <td class="py-2 px-2 font-bold text-orange">C$60/hour</td>
-                                                <td class="py-2 px-2 text-white">Don't see what you need? Contact us! Price discussed individually</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                
-                                <div class="mt-6 p-4 bg-navy blue-50 rounded-lg">
-                                    <p class="text-xs text-white mb-2">
-                                        <strong>Important:</strong> <span class="text-red-400 font-bold">⚠️ All prices are approximate and subject to change</span>. The final price can only be determined after <span class="text-white font-bold">consultation with handyman</span>. Materials are excluded from listed prices.
-                                    </p>
-                                    <p class="text-xs text-white">
-                        <strong>Call-out:</strong> C$60 + First hour (minimum): C$0 = C$65 minimum charge
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Call to Action -->
                     <div class="text-center mt-16">
                         <div class="bg-gradient-to-r rounded-2xl p-8 text-white">
