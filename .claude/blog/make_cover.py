@@ -69,7 +69,7 @@ def main():
         y += int(size * 1.15)
 
     d.text((x, H - 150), "Nestor's Home Help", font=font("Black", 46), fill=WHITE)
-    d.text((x, H - 92), "Licensed & insured handyman  |  Calgary, Airdrie, Okotoks, Cochrane",
+    d.text((x, H - 92), "Licensed & insured handyman  |  Calgary, Airdrie, Chestermere, Okotoks, Cochrane",
            font=font("Bold", 30), fill=(200, 210, 225))
 
     out = ROOT / "assets" / "blog" / f"{a.slug}.webp"

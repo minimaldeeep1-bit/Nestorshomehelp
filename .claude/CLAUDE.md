@@ -8,7 +8,7 @@ This repo is the live website of **Nestor's Home Help**, a solo, part-time, lice
 
 ## Business facts (use exactly these, never invent others)
 - Phone/text/WhatsApp: (403) 461-4332. Email: nestorshomehelp@gmail.com.
-- Service area: **Calgary, Airdrie, Okotoks, Cochrane** (Chestermere is not confirmed, so don't claim it).
+- Service area: **Calgary, Airdrie, Chestermere, Okotoks, Cochrane** (Chestermere confirmed by the owner 2026-11-03).
 - Hours: Mon-Fri 2-10 PM, Sat-Sun 8 AM-8 PM. Same-day service when available.
 - Pricing: **C$60/hour, minimum call-out C$85 including the first hour, materials extra**, free estimates. The final price is agreed after inspection. Don't quote other hourly rates. Fixed ranges are on index.html (Pricing) and can be cited as "from $X".
 - Electrical and plumbing: replacements on **existing** connections only, no new wiring or permit work. Say clearly when a licensed electrician or plumber is needed.
