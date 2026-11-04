@@ -144,7 +144,7 @@ FOOTER = """
     <footer class="navy-bg text-white py-12 mt-16">
         <div class="container mx-auto px-6 text-center">
             <img src="../assets/logo 11.png" alt="Nestor's Home Help" class="h-12 w-auto mx-auto mb-5">
-            <p class="text-gray-300 mb-2">Licensed &amp; insured handyman serving Calgary, Airdrie, Okotoks and Cochrane.</p>
+            <p class="text-gray-300 mb-2">Licensed &amp; insured handyman serving Calgary, Airdrie, Chestermere, Okotoks and Cochrane.</p>
             <p class="text-gray-400 text-sm mb-6">Mon-Fri 2-10 PM &middot; Sat-Sun 8 AM-8 PM</p>
             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 text-gray-300">
                 <a href="tel:{tel}" class="hover:text-white"><i class="fas fa-phone mr-2"></i>{phone}</a>
@@ -235,7 +235,7 @@ def build_post(p, posts):
                 </div>
                 <aside class="mt-10 rounded-2xl navy-bg text-white p-6 sm:p-8">
                     <h2 class="text-2xl font-black mb-2">Need a hand with this?</h2>
-                    <p class="text-gray-200 mb-5">Licensed &amp; insured handyman in Calgary, Airdrie, Okotoks and Cochrane. C$60/hour, free estimates, same-day service when available.</p>
+                    <p class="text-gray-200 mb-5">Licensed &amp; insured handyman in Calgary, Airdrie, Chestermere, Okotoks and Cochrane. C$60/hour, free estimates, same-day service when available.</p>
                     <div class="flex flex-wrap gap-3">
                         <a href="tel:{PHONE_TEL}" class="bg-orange hover:opacity-90 text-white font-bold px-6 py-3 rounded-full"><i class="fas fa-phone-alt mr-2"></i>Call/Text {PHONE}</a>
                         <a href="../index.html#request" class="border-2 border-white hover:bg-white hover:text-[#1E3A5F] font-bold px-6 py-3 rounded-full">Request a free quote</a>
@@ -261,7 +261,7 @@ def build_post(p, posts):
 
 def build_index(posts):
     url = f"{SITE}/blog/"
-    desc = ("Practical home repair and maintenance tips for Calgary, Airdrie, Okotoks and Cochrane homeowners "
+    desc = ("Practical home repair and maintenance tips for Calgary, Airdrie, Chestermere, Okotoks and Cochrane homeowners "
             "from a licensed local handyman.")
     jsonld = [{"@context": "https://schema.org", "@type": "Blog", "name": "Nestor's Home Help Blog", "url": url,
                "description": desc, "publisher": {"@type": "Organization", "name": "Nestor's Home Help"},

@@ -53,7 +53,7 @@ image: <slug>.webp
 Rules for the body (HTML, no `<h1>`, because the template adds the title):
 - **1,000–1,500 words.** Short paragraphs (2–4 sentences), H2 every 150–300 words, H3 where useful, at least one `<ul>` or `<ol>` checklist.
 - Canadian English spelling (colour, metre, centre) and Calgary specifics where they really matter: chinook temperature swings, dry air, hail season, hard water, freeze-thaw, basements, older bungalows vs new builds.
-- Mention the service area naturally once ("Calgary, Airdrie, Okotoks and Cochrane"). No phone number in the body (the template adds the call-to-action box).
+- Mention the service area naturally once ("Calgary, Airdrie, Chestermere, Okotoks and Cochrane"). No phone number in the body (the template adds the call-to-action box).
 - **2–4 internal links** with descriptive anchor text, relative paths from `/blog/`:
   - services: `../index.html#comprehensive-services`, pricing `../index.html#pricing`, quote `../index.html#request`
   - cities: `../airdrie-handyman.html`, `../okotoks-handyman.html`
