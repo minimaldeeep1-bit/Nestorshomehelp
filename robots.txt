@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /wp-admin/
-Disallow: /wp-includes/
-Disallow: /search/
-Disallow: /?s=
-Sitemap: https://www.nestorshomehelp.ca/sitemap.xml
+
+Sitemap: https://nestorshomehelp.ca/sitemap.xml
