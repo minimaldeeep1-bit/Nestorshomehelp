@@ -22,3 +22,6 @@ Never commit client names, addresses, phone numbers (other than the business num
 - `index.html`, `airdrie-handyman.html`, `okotoks-handyman.html`, `home-bar-installation.html`: hand-edited pages. `index.html` uses CRLF line endings.
 - Blog: source in `.claude/blog/posts/*.html`, built by `python .claude/blog/build.py` into `blog/`, `sitemap.xml`, `robots.txt`, `_redirects` and the homepage "BLOG" block. Don't edit generated files by hand.
 - `.claude/` is never served (blocked in `_redirects`).
+- **CSS (since 2026-11-05):** no Tailwind CDN. Pages link `/assets/site.css`, compiled by Tailwind CLI v3.4.17 in `.claude/tailwind/` (`npm run build`; `node_modules` is gitignored, run `npm install` there after a fresh clone). `build.py` rebuilds it automatically. After hand-editing any page with new Tailwind classes, run `cd .claude/tailwind && npm run build` and commit `assets/site.css`.
+- New pages: `cochrane-handyman.html`, `chestermere-handyman.html` (2026-11-05). Add any new static page to `STATIC_PAGES` in `build.py` so it lands in `sitemap.xml`.
+- Images: optimized WebP copies live in `assets/opt/`; pages reference those. Originals are kept until the owner approves cleanup.

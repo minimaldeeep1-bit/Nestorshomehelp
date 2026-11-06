@@ -9,3 +9,6 @@ EST-*.pdf
 # службове
 .DS_Store
 Thumbs.db
+
+# Tailwind build tool (local only)
+.claude/tailwind/node_modules/

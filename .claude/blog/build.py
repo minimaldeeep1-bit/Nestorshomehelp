@@ -98,7 +98,6 @@ HEAD = """<!DOCTYPE html>
     <meta name="theme-color" content="#1E3A5F">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-96x96.png">
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
@@ -118,6 +117,7 @@ HEAD = """<!DOCTYPE html>
         .prose-blog strong {{ color:#1E293B; }}
     </style>
 {jsonld}
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body class="text-gray-800">
     <header class="navy-bg text-white shadow-lg">
@@ -355,6 +355,18 @@ def build_redirects(posts):
     (ROOT / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
 
 
+def build_css():
+    """Rebuild assets/site.css with Tailwind CLI (.claude/tailwind) so classes used in new posts exist."""
+    import shutil, subprocess
+    tw = ROOT / ".claude" / "tailwind"
+    npm = shutil.which("npm")
+    if not npm or not (tw / "node_modules").exists():
+        print("WARNING: assets/site.css NOT rebuilt (run: cd .claude/tailwind && npm install && npm run build)")
+        return
+    r = subprocess.run([npm, "run", "build"], cwd=tw, capture_output=True, text=True)
+    print("site.css rebuilt" if r.returncode == 0 else "WARNING: site.css build failed: " + r.stderr[-800:])
+
+
 def main():
     posts = []
     errors = []
@@ -378,6 +390,7 @@ def main():
     update_home(posts)
     build_sitemap(posts)
     build_redirects(posts)
+    build_css()
     print(f"Built {len(posts)} posts" + (f", {len(future)} scheduled: {future}" if future else ""))
 
 
