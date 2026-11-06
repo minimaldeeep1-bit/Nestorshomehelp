@@ -39,7 +39,7 @@ CATS = {
 CAT_LINK = {
     "home-bar": ("../home-bar-installation.html", "Home bar & kegerator installation"),
 }
-DEFAULT_LINK = ("../index.html#comprehensive-services", "See all handyman services")
+DEFAULT_LINK = ("/#comprehensive-services", "See all handyman services")
 STATIC_PAGES = ["", "airdrie-handyman.html", "okotoks-handyman.html", "home-bar-installation.html"]
 REQUIRED = ["title", "description", "date", "category", "image"]
 
@@ -129,12 +129,12 @@ HEAD = """<!DOCTYPE html>
             <a href="tel:{tel}" class="hover:text-orange flex items-center"><i class="fas fa-phone-alt mr-2"></i><span class="hidden sm:inline mr-1">Call/Text:</span>{phone}</a>
         </div>
         <nav class="container mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-            <a href="../index.html"><img src="../assets/logo 11.png" alt="Nestor's Home Help" class="h-12 sm:h-14 w-auto"></a>
+            <a href="/"><img src="../assets/opt/logo-11.webp" alt="Nestor's Home Help" class="h-12 sm:h-14 w-auto"></a>
             <div class="flex items-center gap-4 sm:gap-6 text-sm sm:text-base font-medium">
-                <a href="../index.html#comprehensive-services" class="hover:text-orange hidden sm:inline">Services</a>
-                <a href="../index.html#pricing" class="hover:text-orange hidden sm:inline">Pricing</a>
+                <a href="/#comprehensive-services" class="hover:text-orange hidden sm:inline">Services</a>
+                <a href="/#pricing" class="hover:text-orange hidden sm:inline">Pricing</a>
                 <a href="index.html" class="hover:text-orange">Blog</a>
-                <a href="../index.html#request" class="bg-orange hover:opacity-90 text-white px-4 py-2 rounded-full font-bold">Free Quote</a>
+                <a href="/#request" class="bg-orange hover:opacity-90 text-white px-4 py-2 rounded-full font-bold">Free Quote</a>
             </div>
         </nav>
     </header>
@@ -143,13 +143,13 @@ HEAD = """<!DOCTYPE html>
 FOOTER = """
     <footer class="navy-bg text-white py-12 mt-16">
         <div class="container mx-auto px-6 text-center">
-            <img src="../assets/logo 11.png" alt="Nestor's Home Help" class="h-12 w-auto mx-auto mb-5">
+            <img src="../assets/opt/logo-11.webp" alt="Nestor's Home Help" class="h-12 w-auto mx-auto mb-5">
             <p class="text-gray-300 mb-2">Licensed &amp; insured handyman serving Calgary, Airdrie, Chestermere, Okotoks and Cochrane.</p>
             <p class="text-gray-400 text-sm mb-6">Mon-Fri 2-10 PM &middot; Sat-Sun 8 AM-8 PM</p>
             <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6 text-gray-300">
                 <a href="tel:{tel}" class="hover:text-white"><i class="fas fa-phone mr-2"></i>{phone}</a>
                 <a href="mailto:nestorshomehelp@gmail.com" class="hover:text-white"><i class="fas fa-envelope mr-2"></i>Email</a>
-                <a href="../index.html" class="hover:text-white">Home</a>
+                <a href="/" class="hover:text-white">Home</a>
                 <a href="index.html" class="hover:text-white">Blog</a>
                 <a href="../airdrie-handyman.html" class="hover:text-white">Handyman Airdrie</a>
                 <a href="../okotoks-handyman.html" class="hover:text-white">Handyman Okotoks</a>
@@ -220,7 +220,7 @@ def build_post(p, posts):
     out += f"""
     <main class="container mx-auto px-4 sm:px-6 pt-8">
         <nav class="text-sm text-gray-500 max-w-3xl mx-auto mb-4" aria-label="Breadcrumb">
-            <a href="../index.html" class="hover:text-orange">Home</a> <span class="mx-1">/</span>
+            <a href="/" class="hover:text-orange">Home</a> <span class="mx-1">/</span>
             <a href="index.html" class="hover:text-orange">Blog</a> <span class="mx-1">/</span>
             <span class="text-gray-400">{esc(label)}</span>
         </nav>
@@ -238,7 +238,7 @@ def build_post(p, posts):
                     <p class="text-gray-200 mb-5">Licensed &amp; insured handyman in Calgary, Airdrie, Chestermere, Okotoks and Cochrane. C$60/hour, free estimates, same-day service when available.</p>
                     <div class="flex flex-wrap gap-3">
                         <a href="tel:{PHONE_TEL}" class="bg-orange hover:opacity-90 text-white font-bold px-6 py-3 rounded-full"><i class="fas fa-phone-alt mr-2"></i>Call/Text {PHONE}</a>
-                        <a href="../index.html#request" class="border-2 border-white hover:bg-white hover:text-[#1E3A5F] font-bold px-6 py-3 rounded-full">Request a free quote</a>
+                        <a href="/#request" class="border-2 border-white hover:bg-white hover:text-[#1E3A5F] font-bold px-6 py-3 rounded-full">Request a free quote</a>
                         <a href="{link}" class="underline underline-offset-4 self-center text-gray-200 hover:text-white">{link_label}</a>
                     </div>
                 </aside>
