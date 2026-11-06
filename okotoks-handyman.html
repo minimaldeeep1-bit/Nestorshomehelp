@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
-    <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/web-app-manifest-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/web-app-manifest-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
@@ -14,7 +14,7 @@
 
     <title>Okotoks Handyman Services | Same Day | (403) 461-4332</title>
     <link rel="canonical" href="https://nestorshomehelp.ca/okotoks-handyman.html" />
-    <meta name="title" content="Okotoks Handyman Services $45+ | Same Day | (403) 461-4332">
+    <meta name="title" content="Okotoks Handyman Services | Same Day | (403) 461-4332">
     <meta name="description" content="Licensed Okotoks handyman Vitalii Nestorenko. TV mounting, furniture assembly, repairs. Local service in Okotoks. Call (403) 461-4332 for free quote!">
     <meta name="keywords" content="handyman okotoks, okotoks handyman, tv mounting okotoks, furniture assembly okotoks, home repairs okotoks, licensed handyman okotoks, affordable handyman okotoks, same day handyman okotoks">
     <meta name="author" content="Vitalii Nestorenko - Nestor's Home Help">
@@ -30,7 +30,7 @@
 
     <meta property="og:title" content="Handyman Services in Okotoks - Nestor's Home Help">
     <meta property="og:description" content="Licensed handyman offering home repairs, furniture assembly & installations in Okotoks area. Same-day service. Call (403) 461-4332">
-    <meta property="og:image" content="https://nestorshomehelp.ca/assets/vitalii-nestorenko-handyman-calgary.jpg">    
+    <meta property="og:image" content="https://nestorshomehelp.ca/assets/og-image.jpg">    
     <meta property="og:url" content="https://nestorshomehelp.ca/okotoks-handyman.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_CA">
@@ -54,11 +54,10 @@
     "name": "Okotoks, AB"
   },
   "priceRange": "$60-$450",
-  "image": "https://nestorshomehelp.ca/assets/vitalii-nestorenko-handyman-calgary.jpg"
+  "image": "https://nestorshomehelp.ca/assets/og-image.jpg"
 }
 </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
@@ -71,7 +70,7 @@
           "name": "Do you offer handyman services in Okotoks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide full handyman services in Okotoks. No extra travel fee for Okotoks residents."
+            "text": "Yes, we provide full handyman services in Okotoks. If a travel charge applies to your address, we tell you before you book."
           }
         },
         {
@@ -79,7 +78,7 @@
           "name": "How much do handyman services cost in Okotoks?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Our pricing in Okotoks is the same as Calgary: starting from $45/hour with a minimum call-out fee. Contact us for a quote."
+            "text": "Same rate as in Calgary: C$60 per hour with a C$85 minimum call-out that includes the first hour. Materials are extra. Contact us for a free quote."
           }
         }
       ]
@@ -99,6 +98,7 @@
         .text-orange { color: var(--orange); }
         .bg-orange { background-color: var(--orange) !important; }
     </style>
+    <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body class="text-white">
     <header class="fixed w-full navy-bg shadow-lg z-50 transition-all duration-300" style="top: 0;">
@@ -200,7 +200,7 @@
                     <a href="index.html#pricing" class="hover:text-[var(--orange)] transition duration-300 flex items-center"><i class="fas fa-dollar-sign mr-2"></i><span class="hidden md:inline">Service Pricing</span></a>
                 </div>
                 <div class="flex items-center justify-center flex-shrink-0 mx-8">
-                    <img src="assets/logo 11.png" alt="Nestor's Home Help" class="h-16 w-auto">
+                    <img src="assets/opt/logo-11.webp" alt="Nestor's Home Help" class="h-16 w-auto">
                 </div>
                 <div class="flex items-center justify-end space-x-6 flex-1">
                     <a href="index.html#about" class="hover:text-[var(--orange)] transition duration-300 flex items-center"><i class="fas fa-user mr-2"></i><span class="hidden md:inline">About Me</span></a>
@@ -212,16 +212,14 @@
                 </div>
             </div>
             <div class="md:hidden flex items-center justify-between">
-                <img src="assets/logo 11.png" alt="Nestor's Home Help" class="h-12 w-auto">
-                <button onclick="toggleMobileMenu()" class="hamburger text-white text-2xl p-2 hover:text-orange transition-colors">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <img src="assets/opt/logo-11.webp" alt="Nestor's Home Help" class="h-12 w-auto">
+                <div class="flex items-center gap-5 text-xl"><a href="tel:+14034614332" aria-label="Call"><i class="fas fa-phone-alt"></i></a><a href="#request" class="bg-orange text-white text-sm font-bold px-4 py-2 rounded-full">Book</a></div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero-slider" class="relative h-[80vh] min-h-[600px] flex items-center justify-center pt-20" style="background-image: url('assets/hero-slide-1.png'); background-size: cover; background-position: center;">
+        <section id="hero-slider" class="relative h-[80vh] min-h-[600px] flex items-center justify-center pt-20" style="background-image: url('assets/opt/hero-slide-1.webp'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 bg-navy/70"></div>
             <div class="container mx-auto px-4 relative z-10 text-center">
                 <h1 class="hero-title text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
@@ -277,14 +275,14 @@
                     <div>
                         <h2 class="text-3xl md:text-4xl font-black mb-6">Why Okotoks Residents Trust Us</h2>
                         <ul class="space-y-4">
-                            <li class="flex items-start"><i class="fas fa-check-circle text-orange mt-1 mr-3"></i> <span><strong>No Extra Travel Fees:</strong> We serve Okotoks regularly.</span></li>
+                            <li class="flex items-start"><i class="fas fa-check-circle text-orange mt-1 mr-3"></i> <span><strong>Upfront Pricing:</strong> C$60/hr, C$85 minimum. Any travel charge is quoted before you book.</span></li>
                             <li class="flex items-start"><i class="fas fa-check-circle text-orange mt-1 mr-3"></i> <span><strong>Punctual Service:</strong> We respect your time and arrive as scheduled.</span></li>
                             <li class="flex items-start"><i class="fas fa-check-circle text-orange mt-1 mr-3"></i> <span><strong>Licensed & Insured:</strong> Complete peace of mind for your property.</span></li>
                             <li class="flex items-start"><i class="fas fa-check-circle text-orange mt-1 mr-3"></i> <span><strong>Clean Work:</strong> We leave your home tidier than we found it.</span></li>
                         </ul>
                     </div>
                     <div class="relative">
-                     <img src="assets/professional-handyman-center.png" alt="Licensed Handyman for Okotoks Home Repairs" class="rounded-xl shadow-2xl w-full object-cover">
+                     <img loading="lazy" decoding="async" src="assets/opt/professional-handyman-center.webp" alt="Licensed Handyman for Okotoks Home Repairs" class="rounded-xl shadow-2xl w-full object-cover">
                     </div>
                 </div>
              </div>
@@ -343,14 +341,13 @@
 
     <footer class="navy-bg text-white py-20 relative overflow-hidden">
         <div class="container mx-auto px-6 relative z-10">
-             <div class="footer-links">
-<p>Areas Served:</p>
-<a href="airdrie-handyman.html">Handyman Airdrie</a> |
-<a href="okotoks-handyman.html">Handyman Okotoks</a> |
+             <div class="footer-links text-gray-300 mb-10">
+<p class="font-bold mb-2">Areas Served:</p>
+<p><a href="/">Handyman Calgary</a> | <a href="airdrie-handyman.html">Handyman Airdrie</a> | <a href="chestermere-handyman.html">Handyman Chestermere</a> | <a href="cochrane-handyman.html">Handyman Cochrane</a> | <a href="okotoks-handyman.html">Handyman Okotoks</a></p>
 </div>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div class="col-span-2">
-                    <img src="assets/logo 11.png" alt="Nestor's Home Help" class="h-16 w-auto mb-6">
+                    <img src="assets/opt/logo-11.webp" alt="Nestor's Home Help" class="h-16 w-auto mb-6">
                     <p class="text-gray-400 text-lg mb-4">
                         Professional handyman services in Calgary. Your trusted partner for all home repairs and renovations.
                     </p>
