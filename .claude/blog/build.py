@@ -40,7 +40,7 @@ CAT_LINK = {
     "home-bar": ("../home-bar-installation.html", "Home bar & kegerator installation"),
 }
 DEFAULT_LINK = ("/#comprehensive-services", "See all handyman services")
-STATIC_PAGES = ["", "airdrie-handyman.html", "okotoks-handyman.html", "home-bar-installation.html"]
+STATIC_PAGES = ["", "airdrie-handyman.html", "chestermere-handyman.html", "cochrane-handyman.html", "okotoks-handyman.html", "home-bar-installation.html"]
 REQUIRED = ["title", "description", "date", "category", "image"]
 
 
@@ -153,6 +153,8 @@ FOOTER = """
                 <a href="index.html" class="hover:text-white">Blog</a>
                 <a href="../airdrie-handyman.html" class="hover:text-white">Handyman Airdrie</a>
                 <a href="../okotoks-handyman.html" class="hover:text-white">Handyman Okotoks</a>
+                <a href="../chestermere-handyman.html" class="hover:text-white">Handyman Chestermere</a>
+                <a href="../cochrane-handyman.html" class="hover:text-white">Handyman Cochrane</a>
                 <a href="../home-bar-installation.html" class="hover:text-white">Home Bar Installation</a>
             </div>
             <p class="text-gray-500 text-sm">&copy; {year} Nestor's Home Help. All rights reserved.</p>
